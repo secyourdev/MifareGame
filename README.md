@@ -1,5 +1,5 @@
 # MifareGame
-Jeu autour de Mifare
+Jeu autour de Mifare.
 Recquiert une carte Arduino et un lecteur MFRC522.
 
 ## Installation
