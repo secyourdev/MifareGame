@@ -1,5 +1,5 @@
 # MifareGame
-Jeu autour de Mifare.
+Jeu regroupant plusieurs challenges exploitant les vulnérabilités de certaines cartes sans-contact MIFARE.
 Recquiert une carte Arduino et un lecteur MFRC522.
 
 ## Installation
