@@ -1,0 +1,743 @@
+\hypertarget{make_master_card_8ino}{}\doxysection{Référence du fichier make\+Master\+Card.\+ino}
+\label{make_master_card_8ino}\index{makeMasterCard.ino@{makeMasterCard.ino}}
+{\ttfamily \#include $<$S\+P\+I.\+h$>$}\newline
+{\ttfamily \#include $<$M\+F\+R\+C522.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{make_master_card_8ino_a36932b0e869e0114f32e255f61306d6b}{R\+S\+T\+\_\+\+P\+IN}}~9
+\item 
+\#define \mbox{\hyperlink{make_master_card_8ino_a86fac98c9b4c98a3e50fc45440878391}{S\+S\+\_\+\+P\+IN}}~10
+\item 
+\#define \mbox{\hyperlink{make_master_card_8ino_aff1f454efd80d2e23a19eb9aa4cf23ec}{N\+E\+W\+\_\+\+U\+ID}}~\{0x09, 0x\+CD, 0x\+F0, 0x5D\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+M\+F\+R\+C522 \mbox{\hyperlink{make_master_card_8ino_ac672f817299d07cc428fe3f456235273}{mfrc522}} (\mbox{\hyperlink{make_master_card_8ino_a86fac98c9b4c98a3e50fc45440878391}{S\+S\+\_\+\+P\+IN}}, \mbox{\hyperlink{make_master_card_8ino_a36932b0e869e0114f32e255f61306d6b}{R\+S\+T\+\_\+\+P\+IN}})
+\item 
+void \mbox{\hyperlink{make_master_card_8ino_a4fc01d736fe50cf5b977f755b675f11d}{setup}} ()
+\item 
+void \mbox{\hyperlink{make_master_card_8ino_afe461d27b9c48d5921c00d521181f12f}{loop}} ()
+\item 
+void \mbox{\hyperlink{make_master_card_8ino_a58bfcaf707e4863a09a15ca2a11d33e5}{dump\+\_\+byte\+\_\+array}} (byte $\ast$\mbox{\hyperlink{make_master_card_8ino_a0dc32c681766921ea9cb757927be6dd3}{buffer}}, byte buffer\+Size)
+\item 
+void \mbox{\hyperlink{make_master_card_8ino_ace10e61b6f8f85bdb21140267aee533f}{format\+Value\+Block}} (byte \mbox{\hyperlink{arduino_main_8ino_abea7c10c015988dec244b419814cabf8}{block\+Addr}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a74db86b29b9d826a8007113e1fd3d2d4}{key}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_aac8b091af40e004f6687a6272d74e77d}{key0A}} = \{key\+Byte\+: \{0x\+A0, 0x\+A1, 0x\+A2, 0x\+A3, 0x\+A4, 0x\+A5\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a8e4bc65b3199348bf250f7e42eb09eaa}{key0B}} = \{key\+Byte\+: \{0x\+A0, 0x\+A1, 0x\+A2, 0x\+A3, 0x\+A4, 0x\+A5\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_af2bf6ec3190486262f95aaa36a671b4c}{key1A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a22a71eb735d43fd8c7d7bb0ad69c727c}{key1B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_aebdc50f1f9d55f3e8d702f72685c0a16}{key2A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a6c688c34bbe792f41f59c271b8851e08}{key2B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a905bd240c55679a1da088192701cce24}{key3A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a622d82bbeba00f2780b289c725289c69}{key3B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a75360efd9a862bc5057c7c705290af50}{key4A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a0ba256df070aa191602a3cfe3627b218}{key4B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_ad8018970abb2fd443c9ecf87e0247b4f}{key5A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a0ef7fe97bc61e4ce3c2541bfabfc4088}{key5B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a7efc1bd2905c31634c936b3b642fd819}{key6A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a411c891863e4b9671bd6b5f2ba7d7f84}{key6B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a817e979ddec92fed31f10bb7f55bb3a2}{key7A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a91f98934b08faca0cb56d7a253a11d41}{key7B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_ade446e8a32b0406f5f65969770c13a24}{key8A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a5f91407f31d1ba53063bee0a11c19988}{key8B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_ab35a03c9695e575ee665e391768c642b}{key9A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_aeb926161612b8cbc4669a4e8f916cb72}{key9B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_ae6fadb7f587462be789beea7a54872ab}{key10A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a6e6838d5e9297d50af69c24b0e37d7ba}{key10B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a332dc658c97e4387c7ee415a216faac3}{key11A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a703c57caf95eb2c06dd9bb97e8a16a90}{key11B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a3e0e547d1d72080428f97f99a96d9169}{key12A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a26a76d18718e571a17c02d74492961f4}{key12B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a3edeb2bbe948fa550e6a664b34921ff8}{key13A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a954f24bb359be12fb05f5e7f8c4af6b4}{key13B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a470cb68bd2a4ab7da1e735095a1e141d}{key14A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a4bf1832ba1ea394d812d61bfe5d6e9f6}{key14B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_a66f9c732bc4c1843eba72d2cc840d16b}{key15A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{make_master_card_8ino_acacc5e64220744bb98eff9afb953f510}{key15B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+char \mbox{\hyperlink{make_master_card_8ino_a518a52d4a838594773904f2609abbd92}{user\+Input}}
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a8fc0085f3de52e1d4e1a4efce16c5eb3}{sector1}} = 1
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a688a7254216a2ec52d9d072fdc1cdb0f}{sector2}} = 2
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a44176a3e27cf74546df5b8821badcc14}{sector3}} = 3
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a0cd9114f9e7fada30d7bbc57c05ba571}{sector4}} = 4
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a5da2681af38dc67de7f27b8b461266ee}{sector5}} = 5
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_af729e0826efc325e5fc851637b07c6ac}{sector6}} = 6
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_adbe47fc8c05bcd721840631a7be0271e}{sector7}} = 7
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a82a4f7cc3bdfb9693b4e85265f0d60bf}{sector8}} = 8
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a5668dcc2d74ef7edb0dc97531928481b}{sector9}} = 9
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_ae6df46dd5332a62be20c33f98973ebdd}{block\+Addr1}} = 4
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a8b9a9391673ecdb6c83b5de2140ca87b}{block\+Addr2}} = 8
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_aa6884d7af9c268825b438daf8d4a4206}{block\+Addr3}} = 12
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a3eaedf468758809d002115d08c13054f}{block\+Addr4}} = 16
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a3676b5f9819162d085088a9b7d816b49}{block\+Addr5}} = 20
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_ad0526fff82f34f8e1df85d084c44147e}{block\+Addr6}} = 24
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_af84e7f7b38357176b17894468400f15d}{block\+Addr7}} = 28
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a338a786af844e33dea2f08ee157f81fc}{block\+Addr8}} = 32
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_aac3a33667a2612e2b05f6f45db5ad491}{block\+Addr9}} = 36
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a77058e8b04846f9969eaf064fc92b0ca}{data\+Blockporte\+Niveau1}} \mbox{[}$\,$\mbox{]}
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a379c1c11900f5125d12580769d47028b}{data\+Blockporte\+Niveau2}} \mbox{[}$\,$\mbox{]}
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a1196f67fad382b35cf221f7d6a56b1ce}{data\+Blockporte\+Niveau3}} \mbox{[}$\,$\mbox{]}
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a037e240da0922e3d913884151fa3e948}{Value\+Blockhotel\+Niveau1}} = 2
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_ada431726e0fb9b2bfe4150ea3ebbf2e0}{data\+Blockhotel\+Niveau2}} \mbox{[}$\,$\mbox{]}
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_acef6bf00fb2cf2cb534e3c5ca04b2f48}{data\+Blockhotel\+Niveau3}} \mbox{[}$\,$\mbox{]}
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_adc0a98ddfef5ed2f49b7c0b4e2f07055}{trailer\+Block1}} = 7
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a4fc6a05c26e478e8592dc42c92c69f38}{trailer\+Block2}} = 11
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_ace9dd26326b760f62f181e7882172663}{trailer\+Block3}} = 15
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_ab2207fe05cf24c8df0b69d09385b3d07}{trailer\+Block4}} = 19
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a1d24a432648eb74c31fbc6ca12dbc887}{trailer\+Block5}} = 23
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_afddf66d0faa45695dc4234a89d90915f}{trailer\+Block6}} = 27
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a41d70f976f7902f79d58673eae7513d0}{trailer\+Block7}} = 31
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a4c456e0a25af6c82e4cf69a0d3093ae4}{trailer\+Block8}} = 35
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a99fd940b2754b9ac05bee565b3f14606}{trailer\+Block9}} = 39
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a8c89389167a60072f5aff581964351d6}{trailer\+Buffer}} \mbox{[}$\,$\mbox{]}
+\item 
+M\+F\+R\+C522\+::\+P\+I\+C\+C\+\_\+\+Type \mbox{\hyperlink{make_master_card_8ino_a45bd063ba607969e00128c9ba2563929}{picc\+Type}}
+\item 
+M\+F\+R\+C522\+::\+Status\+Code \mbox{\hyperlink{make_master_card_8ino_a9355218fc765112713eed7d729a8fa35}{status}}
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a0dc32c681766921ea9cb757927be6dd3}{buffer}} \mbox{[}18\mbox{]}
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_ab028424f03af9549f9665978001ffe9a}{size}} = sizeof(\mbox{\hyperlink{make_master_card_8ino_a0dc32c681766921ea9cb757927be6dd3}{buffer}})
+\item 
+byte \mbox{\hyperlink{make_master_card_8ino_a908d323e20eb19b13d09cf8fdaf7f62c}{count}} = 0
+\item 
+int32\+\_\+t \mbox{\hyperlink{make_master_card_8ino_a01571c420f280137c16d319178731da5}{value}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des macros}
+\mbox{\Hypertarget{make_master_card_8ino_aff1f454efd80d2e23a19eb9aa4cf23ec}\label{make_master_card_8ino_aff1f454efd80d2e23a19eb9aa4cf23ec}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!NEW\_UID@{NEW\_UID}}
+\index{NEW\_UID@{NEW\_UID}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{NEW\_UID}{NEW\_UID}}
+{\footnotesize\ttfamily \#define N\+E\+W\+\_\+\+U\+ID~\{0x09, 0x\+CD, 0x\+F0, 0x5D\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a36932b0e869e0114f32e255f61306d6b}\label{make_master_card_8ino_a36932b0e869e0114f32e255f61306d6b}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!RST\_PIN@{RST\_PIN}}
+\index{RST\_PIN@{RST\_PIN}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{RST\_PIN}{RST\_PIN}}
+{\footnotesize\ttfamily \#define R\+S\+T\+\_\+\+P\+IN~9}
+
+\hypertarget{make_master_card_8ino_autotoc_md0}{}\doxysubsubsection{Ce programme est basé sur l\textquotesingle{}exemple Read\+And\+Write.\+ino de la librairie M\+F\+R\+C522}\label{make_master_card_8ino_autotoc_md0}
+This is a M\+F\+R\+C522 library example; see \href{https://github.com/miguelbalboa/rfid}{\texttt{ https\+://github.\+com/miguelbalboa/rfid}} for further details and other examples.
+
+N\+O\+TE\+: The library file M\+F\+R\+C522.\+h has a lot of useful info. Please read it.\hypertarget{make_master_card_8ino_autotoc_md1}{}\doxysubsubsection{Released into the public domain.}\label{make_master_card_8ino_autotoc_md1}
+\hypertarget{make_master_card_8ino_autotoc_md2}{}\doxysubsubsection{Typical pin layout used\+:}\label{make_master_card_8ino_autotoc_md2}
+M\+F\+R\+C522 Arduino Arduino Arduino Arduino Arduino Reader/\+P\+CD Uno/101 Mega Nano v3 Leonardo/\+Micro Pro Micro \hypertarget{make_master_card_8ino_autotoc_md3}{}\doxysubsubsection{Signal      Pin          Pin           Pin       Pin        Pin              Pin}\label{make_master_card_8ino_autotoc_md3}
+R\+S\+T/\+Reset R\+ST 9 5 D9 R\+E\+S\+E\+T/\+I\+C\+S\+P-\/5 R\+ST S\+PI SS S\+D\+A(\+S\+S) 10 53 D10 10 10 S\+PI M\+O\+SI M\+O\+SI 11 / I\+C\+S\+P-\/4 51 D11 I\+C\+S\+P-\/4 16 S\+PI M\+I\+SO M\+I\+SO 12 / I\+C\+S\+P-\/1 50 D12 I\+C\+S\+P-\/1 14 S\+PI S\+CK S\+CK 13 / I\+C\+S\+P-\/3 52 D13 I\+C\+S\+P-\/3 15 \mbox{\Hypertarget{make_master_card_8ino_a86fac98c9b4c98a3e50fc45440878391}\label{make_master_card_8ino_a86fac98c9b4c98a3e50fc45440878391}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!SS\_PIN@{SS\_PIN}}
+\index{SS\_PIN@{SS\_PIN}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{SS\_PIN}{SS\_PIN}}
+{\footnotesize\ttfamily \#define S\+S\+\_\+\+P\+IN~10}
+
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{make_master_card_8ino_a58bfcaf707e4863a09a15ca2a11d33e5}\label{make_master_card_8ino_a58bfcaf707e4863a09a15ca2a11d33e5}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!dump\_byte\_array@{dump\_byte\_array}}
+\index{dump\_byte\_array@{dump\_byte\_array}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{dump\_byte\_array()}{dump\_byte\_array()}}
+{\footnotesize\ttfamily void dump\+\_\+byte\+\_\+array (\begin{DoxyParamCaption}\item[{byte $\ast$}]{buffer,  }\item[{byte}]{buffer\+Size }\end{DoxyParamCaption})}
+
+Helper routine to dump a byte array as hex values to Serial. \mbox{\Hypertarget{make_master_card_8ino_ace10e61b6f8f85bdb21140267aee533f}\label{make_master_card_8ino_ace10e61b6f8f85bdb21140267aee533f}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!formatValueBlock@{formatValueBlock}}
+\index{formatValueBlock@{formatValueBlock}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{formatValueBlock()}{formatValueBlock()}}
+{\footnotesize\ttfamily void format\+Value\+Block (\begin{DoxyParamCaption}\item[{byte}]{block\+Addr }\end{DoxyParamCaption})}
+
+Ensure that a given block is formatted as a Value Block. \mbox{\Hypertarget{make_master_card_8ino_afe461d27b9c48d5921c00d521181f12f}\label{make_master_card_8ino_afe461d27b9c48d5921c00d521181f12f}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!loop@{loop}}
+\index{loop@{loop}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily void loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Boucle principale \mbox{\Hypertarget{make_master_card_8ino_ac672f817299d07cc428fe3f456235273}\label{make_master_card_8ino_ac672f817299d07cc428fe3f456235273}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!mfrc522@{mfrc522}}
+\index{mfrc522@{mfrc522}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{mfrc522()}{mfrc522()}}
+{\footnotesize\ttfamily M\+F\+R\+C522 mfrc522 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{make_master_card_8ino_a86fac98c9b4c98a3e50fc45440878391}{S\+S\+\_\+\+P\+IN}}}]{,  }\item[{\mbox{\hyperlink{make_master_card_8ino_a36932b0e869e0114f32e255f61306d6b}{R\+S\+T\+\_\+\+P\+IN}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{make_master_card_8ino_a4fc01d736fe50cf5b977f755b675f11d}\label{make_master_card_8ino_a4fc01d736fe50cf5b977f755b675f11d}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!setup@{setup}}
+\index{setup@{setup}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily void setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialisation 
+
+\doxysubsection{Documentation des variables}
+\mbox{\Hypertarget{make_master_card_8ino_ae6df46dd5332a62be20c33f98973ebdd}\label{make_master_card_8ino_ae6df46dd5332a62be20c33f98973ebdd}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!blockAddr1@{blockAddr1}}
+\index{blockAddr1@{blockAddr1}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{blockAddr1}{blockAddr1}}
+{\footnotesize\ttfamily byte block\+Addr1 = 4}
+
+\mbox{\Hypertarget{make_master_card_8ino_a8b9a9391673ecdb6c83b5de2140ca87b}\label{make_master_card_8ino_a8b9a9391673ecdb6c83b5de2140ca87b}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!blockAddr2@{blockAddr2}}
+\index{blockAddr2@{blockAddr2}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{blockAddr2}{blockAddr2}}
+{\footnotesize\ttfamily byte block\+Addr2 = 8}
+
+\mbox{\Hypertarget{make_master_card_8ino_aa6884d7af9c268825b438daf8d4a4206}\label{make_master_card_8ino_aa6884d7af9c268825b438daf8d4a4206}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!blockAddr3@{blockAddr3}}
+\index{blockAddr3@{blockAddr3}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{blockAddr3}{blockAddr3}}
+{\footnotesize\ttfamily byte block\+Addr3 = 12}
+
+\mbox{\Hypertarget{make_master_card_8ino_a3eaedf468758809d002115d08c13054f}\label{make_master_card_8ino_a3eaedf468758809d002115d08c13054f}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!blockAddr4@{blockAddr4}}
+\index{blockAddr4@{blockAddr4}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{blockAddr4}{blockAddr4}}
+{\footnotesize\ttfamily byte block\+Addr4 = 16}
+
+\mbox{\Hypertarget{make_master_card_8ino_a3676b5f9819162d085088a9b7d816b49}\label{make_master_card_8ino_a3676b5f9819162d085088a9b7d816b49}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!blockAddr5@{blockAddr5}}
+\index{blockAddr5@{blockAddr5}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{blockAddr5}{blockAddr5}}
+{\footnotesize\ttfamily byte block\+Addr5 = 20}
+
+\mbox{\Hypertarget{make_master_card_8ino_ad0526fff82f34f8e1df85d084c44147e}\label{make_master_card_8ino_ad0526fff82f34f8e1df85d084c44147e}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!blockAddr6@{blockAddr6}}
+\index{blockAddr6@{blockAddr6}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{blockAddr6}{blockAddr6}}
+{\footnotesize\ttfamily byte block\+Addr6 = 24}
+
+\mbox{\Hypertarget{make_master_card_8ino_af84e7f7b38357176b17894468400f15d}\label{make_master_card_8ino_af84e7f7b38357176b17894468400f15d}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!blockAddr7@{blockAddr7}}
+\index{blockAddr7@{blockAddr7}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{blockAddr7}{blockAddr7}}
+{\footnotesize\ttfamily byte block\+Addr7 = 28}
+
+\mbox{\Hypertarget{make_master_card_8ino_a338a786af844e33dea2f08ee157f81fc}\label{make_master_card_8ino_a338a786af844e33dea2f08ee157f81fc}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!blockAddr8@{blockAddr8}}
+\index{blockAddr8@{blockAddr8}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{blockAddr8}{blockAddr8}}
+{\footnotesize\ttfamily byte block\+Addr8 = 32}
+
+\mbox{\Hypertarget{make_master_card_8ino_aac3a33667a2612e2b05f6f45db5ad491}\label{make_master_card_8ino_aac3a33667a2612e2b05f6f45db5ad491}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!blockAddr9@{blockAddr9}}
+\index{blockAddr9@{blockAddr9}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{blockAddr9}{blockAddr9}}
+{\footnotesize\ttfamily byte block\+Addr9 = 36}
+
+\mbox{\Hypertarget{make_master_card_8ino_a0dc32c681766921ea9cb757927be6dd3}\label{make_master_card_8ino_a0dc32c681766921ea9cb757927be6dd3}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!buffer@{buffer}}
+\index{buffer@{buffer}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily byte buffer\mbox{[}18\mbox{]}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a908d323e20eb19b13d09cf8fdaf7f62c}\label{make_master_card_8ino_a908d323e20eb19b13d09cf8fdaf7f62c}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!count@{count}}
+\index{count@{count}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily byte count = 0}
+
+\mbox{\Hypertarget{make_master_card_8ino_ada431726e0fb9b2bfe4150ea3ebbf2e0}\label{make_master_card_8ino_ada431726e0fb9b2bfe4150ea3ebbf2e0}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!dataBlockhotelNiveau2@{dataBlockhotelNiveau2}}
+\index{dataBlockhotelNiveau2@{dataBlockhotelNiveau2}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{dataBlockhotelNiveau2}{dataBlockhotelNiveau2}}
+{\footnotesize\ttfamily byte data\+Blockhotel\+Niveau2\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    0x02, 0x37, 0x00, 0x00,  }
+\DoxyCodeLine{    0x00, 0x00, 0x00, 0x00,  }
+\DoxyCodeLine{    0x00, 0x00, 0x00, 0x00,  }
+\DoxyCodeLine{    0x00, 0x00, 0x00, 0x00  }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{make_master_card_8ino_acef6bf00fb2cf2cb534e3c5ca04b2f48}\label{make_master_card_8ino_acef6bf00fb2cf2cb534e3c5ca04b2f48}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!dataBlockhotelNiveau3@{dataBlockhotelNiveau3}}
+\index{dataBlockhotelNiveau3@{dataBlockhotelNiveau3}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{dataBlockhotelNiveau3}{dataBlockhotelNiveau3}}
+{\footnotesize\ttfamily byte data\+Blockhotel\+Niveau3\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    0x16, 0x04, 0x19, 0x98,  }
+\DoxyCodeLine{    0x00, 0x00, 0x00, 0x00,  }
+\DoxyCodeLine{    0x00, 0x00, 0x00, 0x00,  }
+\DoxyCodeLine{    0x00, 0x00, 0x00, 0x00  }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{make_master_card_8ino_a77058e8b04846f9969eaf064fc92b0ca}\label{make_master_card_8ino_a77058e8b04846f9969eaf064fc92b0ca}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!dataBlockporteNiveau1@{dataBlockporteNiveau1}}
+\index{dataBlockporteNiveau1@{dataBlockporteNiveau1}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{dataBlockporteNiveau1}{dataBlockporteNiveau1}}
+{\footnotesize\ttfamily byte data\+Blockporte\+Niveau1\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    0x72, 0x65, 0x74, 0x72, }
+\DoxyCodeLine{    0x6f, 0x50, 0x6f, 0x72, }
+\DoxyCodeLine{    0x74, 0x65, 0x32, 0x00, }
+\DoxyCodeLine{    0x00, 0x00, 0x00, 0x00  }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{make_master_card_8ino_a379c1c11900f5125d12580769d47028b}\label{make_master_card_8ino_a379c1c11900f5125d12580769d47028b}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!dataBlockporteNiveau2@{dataBlockporteNiveau2}}
+\index{dataBlockporteNiveau2@{dataBlockporteNiveau2}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{dataBlockporteNiveau2}{dataBlockporteNiveau2}}
+{\footnotesize\ttfamily byte data\+Blockporte\+Niveau2\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    0x72, 0x65, 0x74, 0x72, }
+\DoxyCodeLine{    0x6f, 0x50, 0x6f, 0x72, }
+\DoxyCodeLine{    0x74, 0x65, 0x33, 0x00, }
+\DoxyCodeLine{    0x00, 0x00, 0x00, 0x00  }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{make_master_card_8ino_a1196f67fad382b35cf221f7d6a56b1ce}\label{make_master_card_8ino_a1196f67fad382b35cf221f7d6a56b1ce}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!dataBlockporteNiveau3@{dataBlockporteNiveau3}}
+\index{dataBlockporteNiveau3@{dataBlockporteNiveau3}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{dataBlockporteNiveau3}{dataBlockporteNiveau3}}
+{\footnotesize\ttfamily byte data\+Blockporte\+Niveau3\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    0x72, 0x65, 0x74, 0x72, }
+\DoxyCodeLine{    0x6f, 0x50, 0x6f, 0x72, }
+\DoxyCodeLine{    0x74, 0x65, 0x34, 0x00, }
+\DoxyCodeLine{    0x00, 0x00, 0x00, 0x00  }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{make_master_card_8ino_a74db86b29b9d826a8007113e1fd3d2d4}\label{make_master_card_8ino_a74db86b29b9d826a8007113e1fd3d2d4}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key@{key}}
+\index{key@{key}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_aac8b091af40e004f6687a6272d74e77d}\label{make_master_card_8ino_aac8b091af40e004f6687a6272d74e77d}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key0A@{key0A}}
+\index{key0A@{key0A}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key0A}{key0A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key0A = \{key\+Byte\+: \{0x\+A0, 0x\+A1, 0x\+A2, 0x\+A3, 0x\+A4, 0x\+A5\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a8e4bc65b3199348bf250f7e42eb09eaa}\label{make_master_card_8ino_a8e4bc65b3199348bf250f7e42eb09eaa}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key0B@{key0B}}
+\index{key0B@{key0B}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key0B}{key0B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key0B = \{key\+Byte\+: \{0x\+A0, 0x\+A1, 0x\+A2, 0x\+A3, 0x\+A4, 0x\+A5\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_ae6fadb7f587462be789beea7a54872ab}\label{make_master_card_8ino_ae6fadb7f587462be789beea7a54872ab}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key10A@{key10A}}
+\index{key10A@{key10A}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key10A}{key10A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key10A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a6e6838d5e9297d50af69c24b0e37d7ba}\label{make_master_card_8ino_a6e6838d5e9297d50af69c24b0e37d7ba}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key10B@{key10B}}
+\index{key10B@{key10B}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key10B}{key10B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key10B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a332dc658c97e4387c7ee415a216faac3}\label{make_master_card_8ino_a332dc658c97e4387c7ee415a216faac3}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key11A@{key11A}}
+\index{key11A@{key11A}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key11A}{key11A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key11A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a703c57caf95eb2c06dd9bb97e8a16a90}\label{make_master_card_8ino_a703c57caf95eb2c06dd9bb97e8a16a90}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key11B@{key11B}}
+\index{key11B@{key11B}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key11B}{key11B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key11B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a3e0e547d1d72080428f97f99a96d9169}\label{make_master_card_8ino_a3e0e547d1d72080428f97f99a96d9169}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key12A@{key12A}}
+\index{key12A@{key12A}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key12A}{key12A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key12A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a26a76d18718e571a17c02d74492961f4}\label{make_master_card_8ino_a26a76d18718e571a17c02d74492961f4}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key12B@{key12B}}
+\index{key12B@{key12B}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key12B}{key12B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key12B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a3edeb2bbe948fa550e6a664b34921ff8}\label{make_master_card_8ino_a3edeb2bbe948fa550e6a664b34921ff8}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key13A@{key13A}}
+\index{key13A@{key13A}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key13A}{key13A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key13A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a954f24bb359be12fb05f5e7f8c4af6b4}\label{make_master_card_8ino_a954f24bb359be12fb05f5e7f8c4af6b4}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key13B@{key13B}}
+\index{key13B@{key13B}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key13B}{key13B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key13B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a470cb68bd2a4ab7da1e735095a1e141d}\label{make_master_card_8ino_a470cb68bd2a4ab7da1e735095a1e141d}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key14A@{key14A}}
+\index{key14A@{key14A}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key14A}{key14A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key14A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a4bf1832ba1ea394d812d61bfe5d6e9f6}\label{make_master_card_8ino_a4bf1832ba1ea394d812d61bfe5d6e9f6}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key14B@{key14B}}
+\index{key14B@{key14B}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key14B}{key14B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key14B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a66f9c732bc4c1843eba72d2cc840d16b}\label{make_master_card_8ino_a66f9c732bc4c1843eba72d2cc840d16b}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key15A@{key15A}}
+\index{key15A@{key15A}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key15A}{key15A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key15A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_acacc5e64220744bb98eff9afb953f510}\label{make_master_card_8ino_acacc5e64220744bb98eff9afb953f510}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key15B@{key15B}}
+\index{key15B@{key15B}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key15B}{key15B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key15B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_af2bf6ec3190486262f95aaa36a671b4c}\label{make_master_card_8ino_af2bf6ec3190486262f95aaa36a671b4c}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key1A@{key1A}}
+\index{key1A@{key1A}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key1A}{key1A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key1A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a22a71eb735d43fd8c7d7bb0ad69c727c}\label{make_master_card_8ino_a22a71eb735d43fd8c7d7bb0ad69c727c}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key1B@{key1B}}
+\index{key1B@{key1B}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key1B}{key1B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key1B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_aebdc50f1f9d55f3e8d702f72685c0a16}\label{make_master_card_8ino_aebdc50f1f9d55f3e8d702f72685c0a16}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key2A@{key2A}}
+\index{key2A@{key2A}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key2A}{key2A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key2A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a6c688c34bbe792f41f59c271b8851e08}\label{make_master_card_8ino_a6c688c34bbe792f41f59c271b8851e08}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key2B@{key2B}}
+\index{key2B@{key2B}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key2B}{key2B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key2B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a905bd240c55679a1da088192701cce24}\label{make_master_card_8ino_a905bd240c55679a1da088192701cce24}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key3A@{key3A}}
+\index{key3A@{key3A}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key3A}{key3A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key3A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a622d82bbeba00f2780b289c725289c69}\label{make_master_card_8ino_a622d82bbeba00f2780b289c725289c69}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key3B@{key3B}}
+\index{key3B@{key3B}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key3B}{key3B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key3B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a75360efd9a862bc5057c7c705290af50}\label{make_master_card_8ino_a75360efd9a862bc5057c7c705290af50}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key4A@{key4A}}
+\index{key4A@{key4A}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key4A}{key4A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key4A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a0ba256df070aa191602a3cfe3627b218}\label{make_master_card_8ino_a0ba256df070aa191602a3cfe3627b218}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key4B@{key4B}}
+\index{key4B@{key4B}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key4B}{key4B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key4B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_ad8018970abb2fd443c9ecf87e0247b4f}\label{make_master_card_8ino_ad8018970abb2fd443c9ecf87e0247b4f}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key5A@{key5A}}
+\index{key5A@{key5A}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key5A}{key5A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key5A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a0ef7fe97bc61e4ce3c2541bfabfc4088}\label{make_master_card_8ino_a0ef7fe97bc61e4ce3c2541bfabfc4088}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key5B@{key5B}}
+\index{key5B@{key5B}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key5B}{key5B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key5B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a7efc1bd2905c31634c936b3b642fd819}\label{make_master_card_8ino_a7efc1bd2905c31634c936b3b642fd819}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key6A@{key6A}}
+\index{key6A@{key6A}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key6A}{key6A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key6A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a411c891863e4b9671bd6b5f2ba7d7f84}\label{make_master_card_8ino_a411c891863e4b9671bd6b5f2ba7d7f84}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key6B@{key6B}}
+\index{key6B@{key6B}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key6B}{key6B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key6B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a817e979ddec92fed31f10bb7f55bb3a2}\label{make_master_card_8ino_a817e979ddec92fed31f10bb7f55bb3a2}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key7A@{key7A}}
+\index{key7A@{key7A}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key7A}{key7A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key7A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a91f98934b08faca0cb56d7a253a11d41}\label{make_master_card_8ino_a91f98934b08faca0cb56d7a253a11d41}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key7B@{key7B}}
+\index{key7B@{key7B}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key7B}{key7B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key7B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_ade446e8a32b0406f5f65969770c13a24}\label{make_master_card_8ino_ade446e8a32b0406f5f65969770c13a24}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key8A@{key8A}}
+\index{key8A@{key8A}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key8A}{key8A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key8A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a5f91407f31d1ba53063bee0a11c19988}\label{make_master_card_8ino_a5f91407f31d1ba53063bee0a11c19988}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key8B@{key8B}}
+\index{key8B@{key8B}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key8B}{key8B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key8B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_ab35a03c9695e575ee665e391768c642b}\label{make_master_card_8ino_ab35a03c9695e575ee665e391768c642b}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key9A@{key9A}}
+\index{key9A@{key9A}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key9A}{key9A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key9A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_aeb926161612b8cbc4669a4e8f916cb72}\label{make_master_card_8ino_aeb926161612b8cbc4669a4e8f916cb72}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!key9B@{key9B}}
+\index{key9B@{key9B}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{key9B}{key9B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key9B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{make_master_card_8ino_a45bd063ba607969e00128c9ba2563929}\label{make_master_card_8ino_a45bd063ba607969e00128c9ba2563929}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!piccType@{piccType}}
+\index{piccType@{piccType}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{piccType}{piccType}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+P\+I\+C\+C\+\_\+\+Type picc\+Type}
+
+\mbox{\Hypertarget{make_master_card_8ino_a8fc0085f3de52e1d4e1a4efce16c5eb3}\label{make_master_card_8ino_a8fc0085f3de52e1d4e1a4efce16c5eb3}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!sector1@{sector1}}
+\index{sector1@{sector1}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{sector1}{sector1}}
+{\footnotesize\ttfamily byte sector1 = 1}
+
+\mbox{\Hypertarget{make_master_card_8ino_a688a7254216a2ec52d9d072fdc1cdb0f}\label{make_master_card_8ino_a688a7254216a2ec52d9d072fdc1cdb0f}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!sector2@{sector2}}
+\index{sector2@{sector2}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{sector2}{sector2}}
+{\footnotesize\ttfamily byte sector2 = 2}
+
+\mbox{\Hypertarget{make_master_card_8ino_a44176a3e27cf74546df5b8821badcc14}\label{make_master_card_8ino_a44176a3e27cf74546df5b8821badcc14}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!sector3@{sector3}}
+\index{sector3@{sector3}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{sector3}{sector3}}
+{\footnotesize\ttfamily byte sector3 = 3}
+
+\mbox{\Hypertarget{make_master_card_8ino_a0cd9114f9e7fada30d7bbc57c05ba571}\label{make_master_card_8ino_a0cd9114f9e7fada30d7bbc57c05ba571}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!sector4@{sector4}}
+\index{sector4@{sector4}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{sector4}{sector4}}
+{\footnotesize\ttfamily byte sector4 = 4}
+
+\mbox{\Hypertarget{make_master_card_8ino_a5da2681af38dc67de7f27b8b461266ee}\label{make_master_card_8ino_a5da2681af38dc67de7f27b8b461266ee}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!sector5@{sector5}}
+\index{sector5@{sector5}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{sector5}{sector5}}
+{\footnotesize\ttfamily byte sector5 = 5}
+
+\mbox{\Hypertarget{make_master_card_8ino_af729e0826efc325e5fc851637b07c6ac}\label{make_master_card_8ino_af729e0826efc325e5fc851637b07c6ac}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!sector6@{sector6}}
+\index{sector6@{sector6}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{sector6}{sector6}}
+{\footnotesize\ttfamily byte sector6 = 6}
+
+\mbox{\Hypertarget{make_master_card_8ino_adbe47fc8c05bcd721840631a7be0271e}\label{make_master_card_8ino_adbe47fc8c05bcd721840631a7be0271e}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!sector7@{sector7}}
+\index{sector7@{sector7}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{sector7}{sector7}}
+{\footnotesize\ttfamily byte sector7 = 7}
+
+\mbox{\Hypertarget{make_master_card_8ino_a82a4f7cc3bdfb9693b4e85265f0d60bf}\label{make_master_card_8ino_a82a4f7cc3bdfb9693b4e85265f0d60bf}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!sector8@{sector8}}
+\index{sector8@{sector8}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{sector8}{sector8}}
+{\footnotesize\ttfamily byte sector8 = 8}
+
+\mbox{\Hypertarget{make_master_card_8ino_a5668dcc2d74ef7edb0dc97531928481b}\label{make_master_card_8ino_a5668dcc2d74ef7edb0dc97531928481b}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!sector9@{sector9}}
+\index{sector9@{sector9}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{sector9}{sector9}}
+{\footnotesize\ttfamily byte sector9 = 9}
+
+\mbox{\Hypertarget{make_master_card_8ino_ab028424f03af9549f9665978001ffe9a}\label{make_master_card_8ino_ab028424f03af9549f9665978001ffe9a}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!size@{size}}
+\index{size@{size}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily byte size = sizeof(\mbox{\hyperlink{make_master_card_8ino_a0dc32c681766921ea9cb757927be6dd3}{buffer}})}
+
+\mbox{\Hypertarget{make_master_card_8ino_a9355218fc765112713eed7d729a8fa35}\label{make_master_card_8ino_a9355218fc765112713eed7d729a8fa35}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!status@{status}}
+\index{status@{status}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+Status\+Code status}
+
+\mbox{\Hypertarget{make_master_card_8ino_adc0a98ddfef5ed2f49b7c0b4e2f07055}\label{make_master_card_8ino_adc0a98ddfef5ed2f49b7c0b4e2f07055}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!trailerBlock1@{trailerBlock1}}
+\index{trailerBlock1@{trailerBlock1}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{trailerBlock1}{trailerBlock1}}
+{\footnotesize\ttfamily byte trailer\+Block1 = 7}
+
+\mbox{\Hypertarget{make_master_card_8ino_a4fc6a05c26e478e8592dc42c92c69f38}\label{make_master_card_8ino_a4fc6a05c26e478e8592dc42c92c69f38}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!trailerBlock2@{trailerBlock2}}
+\index{trailerBlock2@{trailerBlock2}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{trailerBlock2}{trailerBlock2}}
+{\footnotesize\ttfamily byte trailer\+Block2 = 11}
+
+\mbox{\Hypertarget{make_master_card_8ino_ace9dd26326b760f62f181e7882172663}\label{make_master_card_8ino_ace9dd26326b760f62f181e7882172663}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!trailerBlock3@{trailerBlock3}}
+\index{trailerBlock3@{trailerBlock3}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{trailerBlock3}{trailerBlock3}}
+{\footnotesize\ttfamily byte trailer\+Block3 = 15}
+
+\mbox{\Hypertarget{make_master_card_8ino_ab2207fe05cf24c8df0b69d09385b3d07}\label{make_master_card_8ino_ab2207fe05cf24c8df0b69d09385b3d07}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!trailerBlock4@{trailerBlock4}}
+\index{trailerBlock4@{trailerBlock4}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{trailerBlock4}{trailerBlock4}}
+{\footnotesize\ttfamily byte trailer\+Block4 = 19}
+
+\mbox{\Hypertarget{make_master_card_8ino_a1d24a432648eb74c31fbc6ca12dbc887}\label{make_master_card_8ino_a1d24a432648eb74c31fbc6ca12dbc887}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!trailerBlock5@{trailerBlock5}}
+\index{trailerBlock5@{trailerBlock5}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{trailerBlock5}{trailerBlock5}}
+{\footnotesize\ttfamily byte trailer\+Block5 = 23}
+
+\mbox{\Hypertarget{make_master_card_8ino_afddf66d0faa45695dc4234a89d90915f}\label{make_master_card_8ino_afddf66d0faa45695dc4234a89d90915f}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!trailerBlock6@{trailerBlock6}}
+\index{trailerBlock6@{trailerBlock6}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{trailerBlock6}{trailerBlock6}}
+{\footnotesize\ttfamily byte trailer\+Block6 = 27}
+
+\mbox{\Hypertarget{make_master_card_8ino_a41d70f976f7902f79d58673eae7513d0}\label{make_master_card_8ino_a41d70f976f7902f79d58673eae7513d0}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!trailerBlock7@{trailerBlock7}}
+\index{trailerBlock7@{trailerBlock7}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{trailerBlock7}{trailerBlock7}}
+{\footnotesize\ttfamily byte trailer\+Block7 = 31}
+
+\mbox{\Hypertarget{make_master_card_8ino_a4c456e0a25af6c82e4cf69a0d3093ae4}\label{make_master_card_8ino_a4c456e0a25af6c82e4cf69a0d3093ae4}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!trailerBlock8@{trailerBlock8}}
+\index{trailerBlock8@{trailerBlock8}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{trailerBlock8}{trailerBlock8}}
+{\footnotesize\ttfamily byte trailer\+Block8 = 35}
+
+\mbox{\Hypertarget{make_master_card_8ino_a99fd940b2754b9ac05bee565b3f14606}\label{make_master_card_8ino_a99fd940b2754b9ac05bee565b3f14606}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!trailerBlock9@{trailerBlock9}}
+\index{trailerBlock9@{trailerBlock9}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{trailerBlock9}{trailerBlock9}}
+{\footnotesize\ttfamily byte trailer\+Block9 = 39}
+
+\mbox{\Hypertarget{make_master_card_8ino_a8c89389167a60072f5aff581964351d6}\label{make_master_card_8ino_a8c89389167a60072f5aff581964351d6}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!trailerBuffer@{trailerBuffer}}
+\index{trailerBuffer@{trailerBuffer}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{trailerBuffer}{trailerBuffer}}
+{\footnotesize\ttfamily byte trailer\+Buffer\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    255, 255, 255, 255, 255, 255,       }
+\DoxyCodeLine{    0, 0, 0,}
+\DoxyCodeLine{    0,}
+\DoxyCodeLine{    255, 255, 255, 255, 255, 255\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{make_master_card_8ino_a518a52d4a838594773904f2609abbd92}\label{make_master_card_8ino_a518a52d4a838594773904f2609abbd92}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!userInput@{userInput}}
+\index{userInput@{userInput}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{userInput}{userInput}}
+{\footnotesize\ttfamily char user\+Input}
+
+\mbox{\Hypertarget{make_master_card_8ino_a01571c420f280137c16d319178731da5}\label{make_master_card_8ino_a01571c420f280137c16d319178731da5}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!value@{value}}
+\index{value@{value}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily int32\+\_\+t value}
+
+\mbox{\Hypertarget{make_master_card_8ino_a037e240da0922e3d913884151fa3e948}\label{make_master_card_8ino_a037e240da0922e3d913884151fa3e948}} 
+\index{makeMasterCard.ino@{makeMasterCard.ino}!ValueBlockhotelNiveau1@{ValueBlockhotelNiveau1}}
+\index{ValueBlockhotelNiveau1@{ValueBlockhotelNiveau1}!makeMasterCard.ino@{makeMasterCard.ino}}
+\doxysubsubsection{\texorpdfstring{ValueBlockhotelNiveau1}{ValueBlockhotelNiveau1}}
+{\footnotesize\ttfamily byte Value\+Blockhotel\+Niveau1 = 2}
+

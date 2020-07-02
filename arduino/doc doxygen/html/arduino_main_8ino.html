@@ -1,0 +1,901 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ArduinoMifareGame: Référence du fichier arduinoMain.ino</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="iconeArduino.ico"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ArduinoMifareGame
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier arduinoMain.ino</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;SPI.h&gt;</code><br />
+<code>#include &lt;MFRC522.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a36932b0e869e0114f32e255f61306d6b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a36932b0e869e0114f32e255f61306d6b">RST_PIN</a>&#160;&#160;&#160;9</td></tr>
+<tr class="separator:a36932b0e869e0114f32e255f61306d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86fac98c9b4c98a3e50fc45440878391"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a86fac98c9b4c98a3e50fc45440878391">SS_PIN</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a86fac98c9b4c98a3e50fc45440878391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ac672f817299d07cc428fe3f456235273"><td class="memItemLeft" align="right" valign="top">MFRC522&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#ac672f817299d07cc428fe3f456235273">mfrc522</a> (<a class="el" href="make_master_card_8ino.html#a86fac98c9b4c98a3e50fc45440878391">SS_PIN</a>, <a class="el" href="make_master_card_8ino.html#a36932b0e869e0114f32e255f61306d6b">RST_PIN</a>)</td></tr>
+<tr class="separator:ac672f817299d07cc428fe3f456235273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a> ()</td></tr>
+<tr class="separator:a4fc01d736fe50cf5b977f755b675f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#afe461d27b9c48d5921c00d521181f12f">loop</a> ()</td></tr>
+<tr class="separator:afe461d27b9c48d5921c00d521181f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58bfcaf707e4863a09a15ca2a11d33e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a58bfcaf707e4863a09a15ca2a11d33e5">dump_byte_array</a> (byte *<a class="el" href="make_master_card_8ino.html#a0dc32c681766921ea9cb757927be6dd3">buffer</a>, byte bufferSize)</td></tr>
+<tr class="separator:a58bfcaf707e4863a09a15ca2a11d33e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aac8b091af40e004f6687a6272d74e77d"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#aac8b091af40e004f6687a6272d74e77d">key0A</a> = {keyByte: {0xA0, 0xA1, 0xA2, 0xA3, 0xA4, 0xA5}}</td></tr>
+<tr class="separator:aac8b091af40e004f6687a6272d74e77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e4bc65b3199348bf250f7e42eb09eaa"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a8e4bc65b3199348bf250f7e42eb09eaa">key0B</a> = {keyByte: {0xA0, 0xA1, 0xA2, 0xA3, 0xA4, 0xA5}}</td></tr>
+<tr class="separator:a8e4bc65b3199348bf250f7e42eb09eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2bf6ec3190486262f95aaa36a671b4c"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#af2bf6ec3190486262f95aaa36a671b4c">key1A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:af2bf6ec3190486262f95aaa36a671b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a71eb735d43fd8c7d7bb0ad69c727c"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a22a71eb735d43fd8c7d7bb0ad69c727c">key1B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a22a71eb735d43fd8c7d7bb0ad69c727c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebdc50f1f9d55f3e8d702f72685c0a16"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#aebdc50f1f9d55f3e8d702f72685c0a16">key2A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:aebdc50f1f9d55f3e8d702f72685c0a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c688c34bbe792f41f59c271b8851e08"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a6c688c34bbe792f41f59c271b8851e08">key2B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a6c688c34bbe792f41f59c271b8851e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a905bd240c55679a1da088192701cce24"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a905bd240c55679a1da088192701cce24">key3A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a905bd240c55679a1da088192701cce24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622d82bbeba00f2780b289c725289c69"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a622d82bbeba00f2780b289c725289c69">key3B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a622d82bbeba00f2780b289c725289c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75360efd9a862bc5057c7c705290af50"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a75360efd9a862bc5057c7c705290af50">key4A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a75360efd9a862bc5057c7c705290af50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba256df070aa191602a3cfe3627b218"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a0ba256df070aa191602a3cfe3627b218">key4B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a0ba256df070aa191602a3cfe3627b218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8018970abb2fd443c9ecf87e0247b4f"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#ad8018970abb2fd443c9ecf87e0247b4f">key5A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:ad8018970abb2fd443c9ecf87e0247b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ef7fe97bc61e4ce3c2541bfabfc4088"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a0ef7fe97bc61e4ce3c2541bfabfc4088">key5B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a0ef7fe97bc61e4ce3c2541bfabfc4088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7efc1bd2905c31634c936b3b642fd819"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a7efc1bd2905c31634c936b3b642fd819">key6A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a7efc1bd2905c31634c936b3b642fd819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a411c891863e4b9671bd6b5f2ba7d7f84"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a411c891863e4b9671bd6b5f2ba7d7f84">key6B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a411c891863e4b9671bd6b5f2ba7d7f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a817e979ddec92fed31f10bb7f55bb3a2"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a817e979ddec92fed31f10bb7f55bb3a2">key7A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a817e979ddec92fed31f10bb7f55bb3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91f98934b08faca0cb56d7a253a11d41"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a91f98934b08faca0cb56d7a253a11d41">key7B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a91f98934b08faca0cb56d7a253a11d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade446e8a32b0406f5f65969770c13a24"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#ade446e8a32b0406f5f65969770c13a24">key8A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:ade446e8a32b0406f5f65969770c13a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f91407f31d1ba53063bee0a11c19988"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a5f91407f31d1ba53063bee0a11c19988">key8B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a5f91407f31d1ba53063bee0a11c19988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35a03c9695e575ee665e391768c642b"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#ab35a03c9695e575ee665e391768c642b">key9A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:ab35a03c9695e575ee665e391768c642b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb926161612b8cbc4669a4e8f916cb72"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#aeb926161612b8cbc4669a4e8f916cb72">key9B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:aeb926161612b8cbc4669a4e8f916cb72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6fadb7f587462be789beea7a54872ab"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#ae6fadb7f587462be789beea7a54872ab">key10A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:ae6fadb7f587462be789beea7a54872ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e6838d5e9297d50af69c24b0e37d7ba"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a6e6838d5e9297d50af69c24b0e37d7ba">key10B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a6e6838d5e9297d50af69c24b0e37d7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a332dc658c97e4387c7ee415a216faac3"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a332dc658c97e4387c7ee415a216faac3">key11A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a332dc658c97e4387c7ee415a216faac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a703c57caf95eb2c06dd9bb97e8a16a90"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a703c57caf95eb2c06dd9bb97e8a16a90">key11B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a703c57caf95eb2c06dd9bb97e8a16a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e0e547d1d72080428f97f99a96d9169"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a3e0e547d1d72080428f97f99a96d9169">key12A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a3e0e547d1d72080428f97f99a96d9169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26a76d18718e571a17c02d74492961f4"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a26a76d18718e571a17c02d74492961f4">key12B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a26a76d18718e571a17c02d74492961f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3edeb2bbe948fa550e6a664b34921ff8"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a3edeb2bbe948fa550e6a664b34921ff8">key13A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a3edeb2bbe948fa550e6a664b34921ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a954f24bb359be12fb05f5e7f8c4af6b4"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a954f24bb359be12fb05f5e7f8c4af6b4">key13B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a954f24bb359be12fb05f5e7f8c4af6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a470cb68bd2a4ab7da1e735095a1e141d"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a470cb68bd2a4ab7da1e735095a1e141d">key14A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a470cb68bd2a4ab7da1e735095a1e141d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf1832ba1ea394d812d61bfe5d6e9f6"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a4bf1832ba1ea394d812d61bfe5d6e9f6">key14B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a4bf1832ba1ea394d812d61bfe5d6e9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f9c732bc4c1843eba72d2cc840d16b"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a66f9c732bc4c1843eba72d2cc840d16b">key15A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a66f9c732bc4c1843eba72d2cc840d16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acacc5e64220744bb98eff9afb953f510"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#acacc5e64220744bb98eff9afb953f510">key15B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:acacc5e64220744bb98eff9afb953f510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a518a52d4a838594773904f2609abbd92"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a518a52d4a838594773904f2609abbd92">userInput</a></td></tr>
+<tr class="separator:a518a52d4a838594773904f2609abbd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6dc3d5f14f4a69750f7a2ce7334c8f6"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#af6dc3d5f14f4a69750f7a2ce7334c8f6">sector</a></td></tr>
+<tr class="separator:af6dc3d5f14f4a69750f7a2ce7334c8f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6afa710b678e8d323477f1ab86dded0"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#ac6afa710b678e8d323477f1ab86dded0">ValueBlock</a></td></tr>
+<tr class="separator:ac6afa710b678e8d323477f1ab86dded0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abea7c10c015988dec244b419814cabf8"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#abea7c10c015988dec244b419814cabf8">blockAddr</a></td></tr>
+<tr class="separator:abea7c10c015988dec244b419814cabf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c3ee5f26148e8c9c8bd5b3111757b4f"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a6c3ee5f26148e8c9c8bd5b3111757b4f">trailerBlock</a></td></tr>
+<tr class="separator:a6c3ee5f26148e8c9c8bd5b3111757b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9355218fc765112713eed7d729a8fa35"><td class="memItemLeft" align="right" valign="top">MFRC522::StatusCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a9355218fc765112713eed7d729a8fa35">status</a></td></tr>
+<tr class="separator:a9355218fc765112713eed7d729a8fa35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc32c681766921ea9cb757927be6dd3"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a0dc32c681766921ea9cb757927be6dd3">buffer</a> [18]</td></tr>
+<tr class="separator:a0dc32c681766921ea9cb757927be6dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab028424f03af9549f9665978001ffe9a"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#ab028424f03af9549f9665978001ffe9a">size</a> = sizeof(<a class="el" href="make_master_card_8ino.html#a0dc32c681766921ea9cb757927be6dd3">buffer</a>)</td></tr>
+<tr class="separator:ab028424f03af9549f9665978001ffe9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04bdd57ed351b2f6c3967b9229e96d0d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a04bdd57ed351b2f6c3967b9229e96d0d">itemPrice</a></td></tr>
+<tr class="separator:a04bdd57ed351b2f6c3967b9229e96d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01571c420f280137c16d319178731da5"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arduino_main_8ino.html#a01571c420f280137c16d319178731da5">value</a></td></tr>
+<tr class="separator:a01571c420f280137c16d319178731da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des macros</h2>
+<a id="a36932b0e869e0114f32e255f61306d6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36932b0e869e0114f32e255f61306d6b">&#9670;&nbsp;</a></span>RST_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RST_PIN&#160;&#160;&#160;9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86fac98c9b4c98a3e50fc45440878391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86fac98c9b4c98a3e50fc45440878391">&#9670;&nbsp;</a></span>SS_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SS_PIN&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a58bfcaf707e4863a09a15ca2a11d33e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58bfcaf707e4863a09a15ca2a11d33e5">&#9670;&nbsp;</a></span>dump_byte_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dump_byte_array </td>
+          <td>(</td>
+          <td class="paramtype">byte *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>bufferSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Réalise un dump sous forme de valeurs hexadécimales vers le port série </p>
+
+</div>
+</div>
+<a id="afe461d27b9c48d5921c00d521181f12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe461d27b9c48d5921c00d521181f12f">&#9670;&nbsp;</a></span>loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Boucle principale </p>
+
+</div>
+</div>
+<a id="ac672f817299d07cc428fe3f456235273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac672f817299d07cc428fe3f456235273">&#9670;&nbsp;</a></span>mfrc522()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522 mfrc522 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="make_master_card_8ino.html#a86fac98c9b4c98a3e50fc45440878391">SS_PIN</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="make_master_card_8ino.html#a36932b0e869e0114f32e255f61306d6b">RST_PIN</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4fc01d736fe50cf5b977f755b675f11d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc01d736fe50cf5b977f755b675f11d">&#9670;&nbsp;</a></span>setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialisation </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a id="abea7c10c015988dec244b419814cabf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abea7c10c015988dec244b419814cabf8">&#9670;&nbsp;</a></span>blockAddr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte blockAddr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0dc32c681766921ea9cb757927be6dd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dc32c681766921ea9cb757927be6dd3">&#9670;&nbsp;</a></span>buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte buffer[18]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04bdd57ed351b2f6c3967b9229e96d0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04bdd57ed351b2f6c3967b9229e96d0d">&#9670;&nbsp;</a></span>itemPrice</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t itemPrice</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac8b091af40e004f6687a6272d74e77d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac8b091af40e004f6687a6272d74e77d">&#9670;&nbsp;</a></span>key0A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key0A = {keyByte: {0xA0, 0xA1, 0xA2, 0xA3, 0xA4, 0xA5}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e4bc65b3199348bf250f7e42eb09eaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e4bc65b3199348bf250f7e42eb09eaa">&#9670;&nbsp;</a></span>key0B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key0B = {keyByte: {0xA0, 0xA1, 0xA2, 0xA3, 0xA4, 0xA5}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6fadb7f587462be789beea7a54872ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6fadb7f587462be789beea7a54872ab">&#9670;&nbsp;</a></span>key10A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key10A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e6838d5e9297d50af69c24b0e37d7ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e6838d5e9297d50af69c24b0e37d7ba">&#9670;&nbsp;</a></span>key10B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key10B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a332dc658c97e4387c7ee415a216faac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a332dc658c97e4387c7ee415a216faac3">&#9670;&nbsp;</a></span>key11A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key11A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a703c57caf95eb2c06dd9bb97e8a16a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a703c57caf95eb2c06dd9bb97e8a16a90">&#9670;&nbsp;</a></span>key11B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key11B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e0e547d1d72080428f97f99a96d9169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e0e547d1d72080428f97f99a96d9169">&#9670;&nbsp;</a></span>key12A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key12A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26a76d18718e571a17c02d74492961f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26a76d18718e571a17c02d74492961f4">&#9670;&nbsp;</a></span>key12B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key12B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3edeb2bbe948fa550e6a664b34921ff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3edeb2bbe948fa550e6a664b34921ff8">&#9670;&nbsp;</a></span>key13A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key13A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a954f24bb359be12fb05f5e7f8c4af6b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a954f24bb359be12fb05f5e7f8c4af6b4">&#9670;&nbsp;</a></span>key13B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key13B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a470cb68bd2a4ab7da1e735095a1e141d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a470cb68bd2a4ab7da1e735095a1e141d">&#9670;&nbsp;</a></span>key14A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key14A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4bf1832ba1ea394d812d61bfe5d6e9f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bf1832ba1ea394d812d61bfe5d6e9f6">&#9670;&nbsp;</a></span>key14B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key14B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66f9c732bc4c1843eba72d2cc840d16b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66f9c732bc4c1843eba72d2cc840d16b">&#9670;&nbsp;</a></span>key15A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key15A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acacc5e64220744bb98eff9afb953f510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acacc5e64220744bb98eff9afb953f510">&#9670;&nbsp;</a></span>key15B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key15B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2bf6ec3190486262f95aaa36a671b4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2bf6ec3190486262f95aaa36a671b4c">&#9670;&nbsp;</a></span>key1A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key1A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a22a71eb735d43fd8c7d7bb0ad69c727c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a71eb735d43fd8c7d7bb0ad69c727c">&#9670;&nbsp;</a></span>key1B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key1B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aebdc50f1f9d55f3e8d702f72685c0a16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebdc50f1f9d55f3e8d702f72685c0a16">&#9670;&nbsp;</a></span>key2A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key2A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c688c34bbe792f41f59c271b8851e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c688c34bbe792f41f59c271b8851e08">&#9670;&nbsp;</a></span>key2B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key2B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a905bd240c55679a1da088192701cce24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a905bd240c55679a1da088192701cce24">&#9670;&nbsp;</a></span>key3A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key3A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a622d82bbeba00f2780b289c725289c69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a622d82bbeba00f2780b289c725289c69">&#9670;&nbsp;</a></span>key3B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key3B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75360efd9a862bc5057c7c705290af50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75360efd9a862bc5057c7c705290af50">&#9670;&nbsp;</a></span>key4A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key4A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ba256df070aa191602a3cfe3627b218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ba256df070aa191602a3cfe3627b218">&#9670;&nbsp;</a></span>key4B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key4B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8018970abb2fd443c9ecf87e0247b4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8018970abb2fd443c9ecf87e0247b4f">&#9670;&nbsp;</a></span>key5A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key5A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ef7fe97bc61e4ce3c2541bfabfc4088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ef7fe97bc61e4ce3c2541bfabfc4088">&#9670;&nbsp;</a></span>key5B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key5B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7efc1bd2905c31634c936b3b642fd819"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7efc1bd2905c31634c936b3b642fd819">&#9670;&nbsp;</a></span>key6A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key6A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a411c891863e4b9671bd6b5f2ba7d7f84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a411c891863e4b9671bd6b5f2ba7d7f84">&#9670;&nbsp;</a></span>key6B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key6B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a817e979ddec92fed31f10bb7f55bb3a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a817e979ddec92fed31f10bb7f55bb3a2">&#9670;&nbsp;</a></span>key7A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key7A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91f98934b08faca0cb56d7a253a11d41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91f98934b08faca0cb56d7a253a11d41">&#9670;&nbsp;</a></span>key7B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key7B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade446e8a32b0406f5f65969770c13a24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade446e8a32b0406f5f65969770c13a24">&#9670;&nbsp;</a></span>key8A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key8A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f91407f31d1ba53063bee0a11c19988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f91407f31d1ba53063bee0a11c19988">&#9670;&nbsp;</a></span>key8B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key8B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab35a03c9695e575ee665e391768c642b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab35a03c9695e575ee665e391768c642b">&#9670;&nbsp;</a></span>key9A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key9A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb926161612b8cbc4669a4e8f916cb72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb926161612b8cbc4669a4e8f916cb72">&#9670;&nbsp;</a></span>key9B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key9B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6dc3d5f14f4a69750f7a2ce7334c8f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6dc3d5f14f4a69750f7a2ce7334c8f6">&#9670;&nbsp;</a></span>sector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte sector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab028424f03af9549f9665978001ffe9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab028424f03af9549f9665978001ffe9a">&#9670;&nbsp;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte size = sizeof(<a class="el" href="make_master_card_8ino.html#a0dc32c681766921ea9cb757927be6dd3">buffer</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9355218fc765112713eed7d729a8fa35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9355218fc765112713eed7d729a8fa35">&#9670;&nbsp;</a></span>status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::StatusCode status</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c3ee5f26148e8c9c8bd5b3111757b4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c3ee5f26148e8c9c8bd5b3111757b4f">&#9670;&nbsp;</a></span>trailerBlock</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte trailerBlock</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a518a52d4a838594773904f2609abbd92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a518a52d4a838594773904f2609abbd92">&#9670;&nbsp;</a></span>userInput</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char userInput</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01571c420f280137c16d319178731da5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01571c420f280137c16d319178731da5">&#9670;&nbsp;</a></span>value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6afa710b678e8d323477f1ab86dded0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6afa710b678e8d323477f1ab86dded0">&#9670;&nbsp;</a></span>ValueBlock</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte ValueBlock</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

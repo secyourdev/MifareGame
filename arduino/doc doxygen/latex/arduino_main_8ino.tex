@@ -1,0 +1,406 @@
+\hypertarget{arduino_main_8ino}{}\doxysection{Référence du fichier arduino\+Main.\+ino}
+\label{arduino_main_8ino}\index{arduinoMain.ino@{arduinoMain.ino}}
+{\ttfamily \#include $<$S\+P\+I.\+h$>$}\newline
+{\ttfamily \#include $<$M\+F\+R\+C522.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{arduino_main_8ino_a36932b0e869e0114f32e255f61306d6b}{R\+S\+T\+\_\+\+P\+IN}}~9
+\item 
+\#define \mbox{\hyperlink{arduino_main_8ino_a86fac98c9b4c98a3e50fc45440878391}{S\+S\+\_\+\+P\+IN}}~10
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+M\+F\+R\+C522 \mbox{\hyperlink{arduino_main_8ino_ac672f817299d07cc428fe3f456235273}{mfrc522}} (\mbox{\hyperlink{make_master_card_8ino_a86fac98c9b4c98a3e50fc45440878391}{S\+S\+\_\+\+P\+IN}}, \mbox{\hyperlink{make_master_card_8ino_a36932b0e869e0114f32e255f61306d6b}{R\+S\+T\+\_\+\+P\+IN}})
+\item 
+void \mbox{\hyperlink{arduino_main_8ino_a4fc01d736fe50cf5b977f755b675f11d}{setup}} ()
+\item 
+void \mbox{\hyperlink{arduino_main_8ino_afe461d27b9c48d5921c00d521181f12f}{loop}} ()
+\item 
+void \mbox{\hyperlink{arduino_main_8ino_a58bfcaf707e4863a09a15ca2a11d33e5}{dump\+\_\+byte\+\_\+array}} (byte $\ast$\mbox{\hyperlink{make_master_card_8ino_a0dc32c681766921ea9cb757927be6dd3}{buffer}}, byte buffer\+Size)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_aac8b091af40e004f6687a6272d74e77d}{key0A}} = \{key\+Byte\+: \{0x\+A0, 0x\+A1, 0x\+A2, 0x\+A3, 0x\+A4, 0x\+A5\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a8e4bc65b3199348bf250f7e42eb09eaa}{key0B}} = \{key\+Byte\+: \{0x\+A0, 0x\+A1, 0x\+A2, 0x\+A3, 0x\+A4, 0x\+A5\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_af2bf6ec3190486262f95aaa36a671b4c}{key1A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a22a71eb735d43fd8c7d7bb0ad69c727c}{key1B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_aebdc50f1f9d55f3e8d702f72685c0a16}{key2A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a6c688c34bbe792f41f59c271b8851e08}{key2B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a905bd240c55679a1da088192701cce24}{key3A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a622d82bbeba00f2780b289c725289c69}{key3B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a75360efd9a862bc5057c7c705290af50}{key4A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a0ba256df070aa191602a3cfe3627b218}{key4B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_ad8018970abb2fd443c9ecf87e0247b4f}{key5A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a0ef7fe97bc61e4ce3c2541bfabfc4088}{key5B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a7efc1bd2905c31634c936b3b642fd819}{key6A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a411c891863e4b9671bd6b5f2ba7d7f84}{key6B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a817e979ddec92fed31f10bb7f55bb3a2}{key7A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a91f98934b08faca0cb56d7a253a11d41}{key7B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_ade446e8a32b0406f5f65969770c13a24}{key8A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a5f91407f31d1ba53063bee0a11c19988}{key8B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_ab35a03c9695e575ee665e391768c642b}{key9A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_aeb926161612b8cbc4669a4e8f916cb72}{key9B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_ae6fadb7f587462be789beea7a54872ab}{key10A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a6e6838d5e9297d50af69c24b0e37d7ba}{key10B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a332dc658c97e4387c7ee415a216faac3}{key11A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a703c57caf95eb2c06dd9bb97e8a16a90}{key11B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a3e0e547d1d72080428f97f99a96d9169}{key12A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a26a76d18718e571a17c02d74492961f4}{key12B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a3edeb2bbe948fa550e6a664b34921ff8}{key13A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a954f24bb359be12fb05f5e7f8c4af6b4}{key13B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a470cb68bd2a4ab7da1e735095a1e141d}{key14A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a4bf1832ba1ea394d812d61bfe5d6e9f6}{key14B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_a66f9c732bc4c1843eba72d2cc840d16b}{key15A}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key \mbox{\hyperlink{arduino_main_8ino_acacc5e64220744bb98eff9afb953f510}{key15B}} = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}
+\item 
+char \mbox{\hyperlink{arduino_main_8ino_a518a52d4a838594773904f2609abbd92}{user\+Input}}
+\item 
+byte \mbox{\hyperlink{arduino_main_8ino_af6dc3d5f14f4a69750f7a2ce7334c8f6}{sector}}
+\item 
+byte \mbox{\hyperlink{arduino_main_8ino_ac6afa710b678e8d323477f1ab86dded0}{Value\+Block}}
+\item 
+byte \mbox{\hyperlink{arduino_main_8ino_abea7c10c015988dec244b419814cabf8}{block\+Addr}}
+\item 
+byte \mbox{\hyperlink{arduino_main_8ino_a6c3ee5f26148e8c9c8bd5b3111757b4f}{trailer\+Block}}
+\item 
+M\+F\+R\+C522\+::\+Status\+Code \mbox{\hyperlink{arduino_main_8ino_a9355218fc765112713eed7d729a8fa35}{status}}
+\item 
+byte \mbox{\hyperlink{arduino_main_8ino_a0dc32c681766921ea9cb757927be6dd3}{buffer}} \mbox{[}18\mbox{]}
+\item 
+byte \mbox{\hyperlink{arduino_main_8ino_ab028424f03af9549f9665978001ffe9a}{size}} = sizeof(\mbox{\hyperlink{make_master_card_8ino_a0dc32c681766921ea9cb757927be6dd3}{buffer}})
+\item 
+int32\+\_\+t \mbox{\hyperlink{arduino_main_8ino_a04bdd57ed351b2f6c3967b9229e96d0d}{item\+Price}}
+\item 
+int32\+\_\+t \mbox{\hyperlink{arduino_main_8ino_a01571c420f280137c16d319178731da5}{value}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des macros}
+\mbox{\Hypertarget{arduino_main_8ino_a36932b0e869e0114f32e255f61306d6b}\label{arduino_main_8ino_a36932b0e869e0114f32e255f61306d6b}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!RST\_PIN@{RST\_PIN}}
+\index{RST\_PIN@{RST\_PIN}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{RST\_PIN}{RST\_PIN}}
+{\footnotesize\ttfamily \#define R\+S\+T\+\_\+\+P\+IN~9}
+
+\mbox{\Hypertarget{arduino_main_8ino_a86fac98c9b4c98a3e50fc45440878391}\label{arduino_main_8ino_a86fac98c9b4c98a3e50fc45440878391}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!SS\_PIN@{SS\_PIN}}
+\index{SS\_PIN@{SS\_PIN}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{SS\_PIN}{SS\_PIN}}
+{\footnotesize\ttfamily \#define S\+S\+\_\+\+P\+IN~10}
+
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{arduino_main_8ino_a58bfcaf707e4863a09a15ca2a11d33e5}\label{arduino_main_8ino_a58bfcaf707e4863a09a15ca2a11d33e5}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!dump\_byte\_array@{dump\_byte\_array}}
+\index{dump\_byte\_array@{dump\_byte\_array}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{dump\_byte\_array()}{dump\_byte\_array()}}
+{\footnotesize\ttfamily void dump\+\_\+byte\+\_\+array (\begin{DoxyParamCaption}\item[{byte $\ast$}]{buffer,  }\item[{byte}]{buffer\+Size }\end{DoxyParamCaption})}
+
+Réalise un dump sous forme de valeurs hexadécimales vers le port série \mbox{\Hypertarget{arduino_main_8ino_afe461d27b9c48d5921c00d521181f12f}\label{arduino_main_8ino_afe461d27b9c48d5921c00d521181f12f}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!loop@{loop}}
+\index{loop@{loop}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily void loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Boucle principale \mbox{\Hypertarget{arduino_main_8ino_ac672f817299d07cc428fe3f456235273}\label{arduino_main_8ino_ac672f817299d07cc428fe3f456235273}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!mfrc522@{mfrc522}}
+\index{mfrc522@{mfrc522}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{mfrc522()}{mfrc522()}}
+{\footnotesize\ttfamily M\+F\+R\+C522 mfrc522 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{make_master_card_8ino_a86fac98c9b4c98a3e50fc45440878391}{S\+S\+\_\+\+P\+IN}}}]{,  }\item[{\mbox{\hyperlink{make_master_card_8ino_a36932b0e869e0114f32e255f61306d6b}{R\+S\+T\+\_\+\+P\+IN}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{arduino_main_8ino_a4fc01d736fe50cf5b977f755b675f11d}\label{arduino_main_8ino_a4fc01d736fe50cf5b977f755b675f11d}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!setup@{setup}}
+\index{setup@{setup}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily void setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialisation 
+
+\doxysubsection{Documentation des variables}
+\mbox{\Hypertarget{arduino_main_8ino_abea7c10c015988dec244b419814cabf8}\label{arduino_main_8ino_abea7c10c015988dec244b419814cabf8}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!blockAddr@{blockAddr}}
+\index{blockAddr@{blockAddr}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{blockAddr}{blockAddr}}
+{\footnotesize\ttfamily byte block\+Addr}
+
+\mbox{\Hypertarget{arduino_main_8ino_a0dc32c681766921ea9cb757927be6dd3}\label{arduino_main_8ino_a0dc32c681766921ea9cb757927be6dd3}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!buffer@{buffer}}
+\index{buffer@{buffer}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily byte buffer\mbox{[}18\mbox{]}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a04bdd57ed351b2f6c3967b9229e96d0d}\label{arduino_main_8ino_a04bdd57ed351b2f6c3967b9229e96d0d}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!itemPrice@{itemPrice}}
+\index{itemPrice@{itemPrice}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{itemPrice}{itemPrice}}
+{\footnotesize\ttfamily int32\+\_\+t item\+Price}
+
+\mbox{\Hypertarget{arduino_main_8ino_aac8b091af40e004f6687a6272d74e77d}\label{arduino_main_8ino_aac8b091af40e004f6687a6272d74e77d}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key0A@{key0A}}
+\index{key0A@{key0A}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key0A}{key0A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key0A = \{key\+Byte\+: \{0x\+A0, 0x\+A1, 0x\+A2, 0x\+A3, 0x\+A4, 0x\+A5\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a8e4bc65b3199348bf250f7e42eb09eaa}\label{arduino_main_8ino_a8e4bc65b3199348bf250f7e42eb09eaa}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key0B@{key0B}}
+\index{key0B@{key0B}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key0B}{key0B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key0B = \{key\+Byte\+: \{0x\+A0, 0x\+A1, 0x\+A2, 0x\+A3, 0x\+A4, 0x\+A5\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_ae6fadb7f587462be789beea7a54872ab}\label{arduino_main_8ino_ae6fadb7f587462be789beea7a54872ab}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key10A@{key10A}}
+\index{key10A@{key10A}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key10A}{key10A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key10A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a6e6838d5e9297d50af69c24b0e37d7ba}\label{arduino_main_8ino_a6e6838d5e9297d50af69c24b0e37d7ba}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key10B@{key10B}}
+\index{key10B@{key10B}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key10B}{key10B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key10B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a332dc658c97e4387c7ee415a216faac3}\label{arduino_main_8ino_a332dc658c97e4387c7ee415a216faac3}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key11A@{key11A}}
+\index{key11A@{key11A}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key11A}{key11A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key11A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a703c57caf95eb2c06dd9bb97e8a16a90}\label{arduino_main_8ino_a703c57caf95eb2c06dd9bb97e8a16a90}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key11B@{key11B}}
+\index{key11B@{key11B}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key11B}{key11B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key11B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a3e0e547d1d72080428f97f99a96d9169}\label{arduino_main_8ino_a3e0e547d1d72080428f97f99a96d9169}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key12A@{key12A}}
+\index{key12A@{key12A}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key12A}{key12A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key12A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a26a76d18718e571a17c02d74492961f4}\label{arduino_main_8ino_a26a76d18718e571a17c02d74492961f4}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key12B@{key12B}}
+\index{key12B@{key12B}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key12B}{key12B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key12B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a3edeb2bbe948fa550e6a664b34921ff8}\label{arduino_main_8ino_a3edeb2bbe948fa550e6a664b34921ff8}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key13A@{key13A}}
+\index{key13A@{key13A}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key13A}{key13A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key13A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a954f24bb359be12fb05f5e7f8c4af6b4}\label{arduino_main_8ino_a954f24bb359be12fb05f5e7f8c4af6b4}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key13B@{key13B}}
+\index{key13B@{key13B}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key13B}{key13B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key13B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a470cb68bd2a4ab7da1e735095a1e141d}\label{arduino_main_8ino_a470cb68bd2a4ab7da1e735095a1e141d}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key14A@{key14A}}
+\index{key14A@{key14A}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key14A}{key14A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key14A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a4bf1832ba1ea394d812d61bfe5d6e9f6}\label{arduino_main_8ino_a4bf1832ba1ea394d812d61bfe5d6e9f6}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key14B@{key14B}}
+\index{key14B@{key14B}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key14B}{key14B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key14B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a66f9c732bc4c1843eba72d2cc840d16b}\label{arduino_main_8ino_a66f9c732bc4c1843eba72d2cc840d16b}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key15A@{key15A}}
+\index{key15A@{key15A}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key15A}{key15A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key15A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_acacc5e64220744bb98eff9afb953f510}\label{arduino_main_8ino_acacc5e64220744bb98eff9afb953f510}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key15B@{key15B}}
+\index{key15B@{key15B}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key15B}{key15B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key15B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_af2bf6ec3190486262f95aaa36a671b4c}\label{arduino_main_8ino_af2bf6ec3190486262f95aaa36a671b4c}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key1A@{key1A}}
+\index{key1A@{key1A}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key1A}{key1A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key1A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a22a71eb735d43fd8c7d7bb0ad69c727c}\label{arduino_main_8ino_a22a71eb735d43fd8c7d7bb0ad69c727c}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key1B@{key1B}}
+\index{key1B@{key1B}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key1B}{key1B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key1B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_aebdc50f1f9d55f3e8d702f72685c0a16}\label{arduino_main_8ino_aebdc50f1f9d55f3e8d702f72685c0a16}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key2A@{key2A}}
+\index{key2A@{key2A}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key2A}{key2A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key2A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a6c688c34bbe792f41f59c271b8851e08}\label{arduino_main_8ino_a6c688c34bbe792f41f59c271b8851e08}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key2B@{key2B}}
+\index{key2B@{key2B}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key2B}{key2B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key2B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a905bd240c55679a1da088192701cce24}\label{arduino_main_8ino_a905bd240c55679a1da088192701cce24}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key3A@{key3A}}
+\index{key3A@{key3A}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key3A}{key3A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key3A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a622d82bbeba00f2780b289c725289c69}\label{arduino_main_8ino_a622d82bbeba00f2780b289c725289c69}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key3B@{key3B}}
+\index{key3B@{key3B}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key3B}{key3B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key3B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a75360efd9a862bc5057c7c705290af50}\label{arduino_main_8ino_a75360efd9a862bc5057c7c705290af50}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key4A@{key4A}}
+\index{key4A@{key4A}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key4A}{key4A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key4A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a0ba256df070aa191602a3cfe3627b218}\label{arduino_main_8ino_a0ba256df070aa191602a3cfe3627b218}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key4B@{key4B}}
+\index{key4B@{key4B}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key4B}{key4B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key4B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_ad8018970abb2fd443c9ecf87e0247b4f}\label{arduino_main_8ino_ad8018970abb2fd443c9ecf87e0247b4f}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key5A@{key5A}}
+\index{key5A@{key5A}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key5A}{key5A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key5A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a0ef7fe97bc61e4ce3c2541bfabfc4088}\label{arduino_main_8ino_a0ef7fe97bc61e4ce3c2541bfabfc4088}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key5B@{key5B}}
+\index{key5B@{key5B}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key5B}{key5B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key5B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a7efc1bd2905c31634c936b3b642fd819}\label{arduino_main_8ino_a7efc1bd2905c31634c936b3b642fd819}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key6A@{key6A}}
+\index{key6A@{key6A}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key6A}{key6A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key6A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a411c891863e4b9671bd6b5f2ba7d7f84}\label{arduino_main_8ino_a411c891863e4b9671bd6b5f2ba7d7f84}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key6B@{key6B}}
+\index{key6B@{key6B}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key6B}{key6B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key6B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a817e979ddec92fed31f10bb7f55bb3a2}\label{arduino_main_8ino_a817e979ddec92fed31f10bb7f55bb3a2}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key7A@{key7A}}
+\index{key7A@{key7A}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key7A}{key7A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key7A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a91f98934b08faca0cb56d7a253a11d41}\label{arduino_main_8ino_a91f98934b08faca0cb56d7a253a11d41}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key7B@{key7B}}
+\index{key7B@{key7B}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key7B}{key7B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key7B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_ade446e8a32b0406f5f65969770c13a24}\label{arduino_main_8ino_ade446e8a32b0406f5f65969770c13a24}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key8A@{key8A}}
+\index{key8A@{key8A}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key8A}{key8A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key8A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_a5f91407f31d1ba53063bee0a11c19988}\label{arduino_main_8ino_a5f91407f31d1ba53063bee0a11c19988}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key8B@{key8B}}
+\index{key8B@{key8B}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key8B}{key8B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key8B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_ab35a03c9695e575ee665e391768c642b}\label{arduino_main_8ino_ab35a03c9695e575ee665e391768c642b}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key9A@{key9A}}
+\index{key9A@{key9A}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key9A}{key9A}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key9A = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_aeb926161612b8cbc4669a4e8f916cb72}\label{arduino_main_8ino_aeb926161612b8cbc4669a4e8f916cb72}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!key9B@{key9B}}
+\index{key9B@{key9B}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{key9B}{key9B}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+M\+I\+F\+A\+R\+E\+\_\+\+Key key9B = \{key\+Byte\+: \{0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF, 0x\+FF\}\}}
+
+\mbox{\Hypertarget{arduino_main_8ino_af6dc3d5f14f4a69750f7a2ce7334c8f6}\label{arduino_main_8ino_af6dc3d5f14f4a69750f7a2ce7334c8f6}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!sector@{sector}}
+\index{sector@{sector}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{sector}{sector}}
+{\footnotesize\ttfamily byte sector}
+
+\mbox{\Hypertarget{arduino_main_8ino_ab028424f03af9549f9665978001ffe9a}\label{arduino_main_8ino_ab028424f03af9549f9665978001ffe9a}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!size@{size}}
+\index{size@{size}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily byte size = sizeof(\mbox{\hyperlink{make_master_card_8ino_a0dc32c681766921ea9cb757927be6dd3}{buffer}})}
+
+\mbox{\Hypertarget{arduino_main_8ino_a9355218fc765112713eed7d729a8fa35}\label{arduino_main_8ino_a9355218fc765112713eed7d729a8fa35}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!status@{status}}
+\index{status@{status}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily M\+F\+R\+C522\+::\+Status\+Code status}
+
+\mbox{\Hypertarget{arduino_main_8ino_a6c3ee5f26148e8c9c8bd5b3111757b4f}\label{arduino_main_8ino_a6c3ee5f26148e8c9c8bd5b3111757b4f}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!trailerBlock@{trailerBlock}}
+\index{trailerBlock@{trailerBlock}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{trailerBlock}{trailerBlock}}
+{\footnotesize\ttfamily byte trailer\+Block}
+
+\mbox{\Hypertarget{arduino_main_8ino_a518a52d4a838594773904f2609abbd92}\label{arduino_main_8ino_a518a52d4a838594773904f2609abbd92}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!userInput@{userInput}}
+\index{userInput@{userInput}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{userInput}{userInput}}
+{\footnotesize\ttfamily char user\+Input}
+
+\mbox{\Hypertarget{arduino_main_8ino_a01571c420f280137c16d319178731da5}\label{arduino_main_8ino_a01571c420f280137c16d319178731da5}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!value@{value}}
+\index{value@{value}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily int32\+\_\+t value}
+
+\mbox{\Hypertarget{arduino_main_8ino_ac6afa710b678e8d323477f1ab86dded0}\label{arduino_main_8ino_ac6afa710b678e8d323477f1ab86dded0}} 
+\index{arduinoMain.ino@{arduinoMain.ino}!ValueBlock@{ValueBlock}}
+\index{ValueBlock@{ValueBlock}!arduinoMain.ino@{arduinoMain.ino}}
+\doxysubsubsection{\texorpdfstring{ValueBlock}{ValueBlock}}
+{\footnotesize\ttfamily byte Value\+Block}
+

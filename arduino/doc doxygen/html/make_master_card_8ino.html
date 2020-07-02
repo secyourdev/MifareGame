@@ -1,0 +1,1497 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ArduinoMifareGame: Référence du fichier makeMasterCard.ino</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="iconeArduino.ico"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ArduinoMifareGame
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier makeMasterCard.ino</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;SPI.h&gt;</code><br />
+<code>#include &lt;MFRC522.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a36932b0e869e0114f32e255f61306d6b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a36932b0e869e0114f32e255f61306d6b">RST_PIN</a>&#160;&#160;&#160;9</td></tr>
+<tr class="separator:a36932b0e869e0114f32e255f61306d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86fac98c9b4c98a3e50fc45440878391"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a86fac98c9b4c98a3e50fc45440878391">SS_PIN</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a86fac98c9b4c98a3e50fc45440878391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff1f454efd80d2e23a19eb9aa4cf23ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#aff1f454efd80d2e23a19eb9aa4cf23ec">NEW_UID</a>&#160;&#160;&#160;{0x09, 0xCD, 0xF0, 0x5D}</td></tr>
+<tr class="separator:aff1f454efd80d2e23a19eb9aa4cf23ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ac672f817299d07cc428fe3f456235273"><td class="memItemLeft" align="right" valign="top">MFRC522&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#ac672f817299d07cc428fe3f456235273">mfrc522</a> (<a class="el" href="make_master_card_8ino.html#a86fac98c9b4c98a3e50fc45440878391">SS_PIN</a>, <a class="el" href="make_master_card_8ino.html#a36932b0e869e0114f32e255f61306d6b">RST_PIN</a>)</td></tr>
+<tr class="separator:ac672f817299d07cc428fe3f456235273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a> ()</td></tr>
+<tr class="separator:a4fc01d736fe50cf5b977f755b675f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#afe461d27b9c48d5921c00d521181f12f">loop</a> ()</td></tr>
+<tr class="separator:afe461d27b9c48d5921c00d521181f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58bfcaf707e4863a09a15ca2a11d33e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a58bfcaf707e4863a09a15ca2a11d33e5">dump_byte_array</a> (byte *<a class="el" href="make_master_card_8ino.html#a0dc32c681766921ea9cb757927be6dd3">buffer</a>, byte bufferSize)</td></tr>
+<tr class="separator:a58bfcaf707e4863a09a15ca2a11d33e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace10e61b6f8f85bdb21140267aee533f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#ace10e61b6f8f85bdb21140267aee533f">formatValueBlock</a> (byte <a class="el" href="arduino_main_8ino.html#abea7c10c015988dec244b419814cabf8">blockAddr</a>)</td></tr>
+<tr class="separator:ace10e61b6f8f85bdb21140267aee533f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a74db86b29b9d826a8007113e1fd3d2d4"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a74db86b29b9d826a8007113e1fd3d2d4">key</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a74db86b29b9d826a8007113e1fd3d2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac8b091af40e004f6687a6272d74e77d"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#aac8b091af40e004f6687a6272d74e77d">key0A</a> = {keyByte: {0xA0, 0xA1, 0xA2, 0xA3, 0xA4, 0xA5}}</td></tr>
+<tr class="separator:aac8b091af40e004f6687a6272d74e77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e4bc65b3199348bf250f7e42eb09eaa"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a8e4bc65b3199348bf250f7e42eb09eaa">key0B</a> = {keyByte: {0xA0, 0xA1, 0xA2, 0xA3, 0xA4, 0xA5}}</td></tr>
+<tr class="separator:a8e4bc65b3199348bf250f7e42eb09eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2bf6ec3190486262f95aaa36a671b4c"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#af2bf6ec3190486262f95aaa36a671b4c">key1A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:af2bf6ec3190486262f95aaa36a671b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a71eb735d43fd8c7d7bb0ad69c727c"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a22a71eb735d43fd8c7d7bb0ad69c727c">key1B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a22a71eb735d43fd8c7d7bb0ad69c727c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebdc50f1f9d55f3e8d702f72685c0a16"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#aebdc50f1f9d55f3e8d702f72685c0a16">key2A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:aebdc50f1f9d55f3e8d702f72685c0a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c688c34bbe792f41f59c271b8851e08"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a6c688c34bbe792f41f59c271b8851e08">key2B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a6c688c34bbe792f41f59c271b8851e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a905bd240c55679a1da088192701cce24"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a905bd240c55679a1da088192701cce24">key3A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a905bd240c55679a1da088192701cce24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622d82bbeba00f2780b289c725289c69"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a622d82bbeba00f2780b289c725289c69">key3B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a622d82bbeba00f2780b289c725289c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75360efd9a862bc5057c7c705290af50"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a75360efd9a862bc5057c7c705290af50">key4A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a75360efd9a862bc5057c7c705290af50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba256df070aa191602a3cfe3627b218"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a0ba256df070aa191602a3cfe3627b218">key4B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a0ba256df070aa191602a3cfe3627b218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8018970abb2fd443c9ecf87e0247b4f"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#ad8018970abb2fd443c9ecf87e0247b4f">key5A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:ad8018970abb2fd443c9ecf87e0247b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ef7fe97bc61e4ce3c2541bfabfc4088"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a0ef7fe97bc61e4ce3c2541bfabfc4088">key5B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a0ef7fe97bc61e4ce3c2541bfabfc4088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7efc1bd2905c31634c936b3b642fd819"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a7efc1bd2905c31634c936b3b642fd819">key6A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a7efc1bd2905c31634c936b3b642fd819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a411c891863e4b9671bd6b5f2ba7d7f84"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a411c891863e4b9671bd6b5f2ba7d7f84">key6B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a411c891863e4b9671bd6b5f2ba7d7f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a817e979ddec92fed31f10bb7f55bb3a2"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a817e979ddec92fed31f10bb7f55bb3a2">key7A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a817e979ddec92fed31f10bb7f55bb3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91f98934b08faca0cb56d7a253a11d41"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a91f98934b08faca0cb56d7a253a11d41">key7B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a91f98934b08faca0cb56d7a253a11d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade446e8a32b0406f5f65969770c13a24"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#ade446e8a32b0406f5f65969770c13a24">key8A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:ade446e8a32b0406f5f65969770c13a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f91407f31d1ba53063bee0a11c19988"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a5f91407f31d1ba53063bee0a11c19988">key8B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a5f91407f31d1ba53063bee0a11c19988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35a03c9695e575ee665e391768c642b"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#ab35a03c9695e575ee665e391768c642b">key9A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:ab35a03c9695e575ee665e391768c642b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb926161612b8cbc4669a4e8f916cb72"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#aeb926161612b8cbc4669a4e8f916cb72">key9B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:aeb926161612b8cbc4669a4e8f916cb72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6fadb7f587462be789beea7a54872ab"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#ae6fadb7f587462be789beea7a54872ab">key10A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:ae6fadb7f587462be789beea7a54872ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e6838d5e9297d50af69c24b0e37d7ba"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a6e6838d5e9297d50af69c24b0e37d7ba">key10B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a6e6838d5e9297d50af69c24b0e37d7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a332dc658c97e4387c7ee415a216faac3"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a332dc658c97e4387c7ee415a216faac3">key11A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a332dc658c97e4387c7ee415a216faac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a703c57caf95eb2c06dd9bb97e8a16a90"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a703c57caf95eb2c06dd9bb97e8a16a90">key11B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a703c57caf95eb2c06dd9bb97e8a16a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e0e547d1d72080428f97f99a96d9169"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a3e0e547d1d72080428f97f99a96d9169">key12A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a3e0e547d1d72080428f97f99a96d9169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26a76d18718e571a17c02d74492961f4"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a26a76d18718e571a17c02d74492961f4">key12B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a26a76d18718e571a17c02d74492961f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3edeb2bbe948fa550e6a664b34921ff8"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a3edeb2bbe948fa550e6a664b34921ff8">key13A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a3edeb2bbe948fa550e6a664b34921ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a954f24bb359be12fb05f5e7f8c4af6b4"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a954f24bb359be12fb05f5e7f8c4af6b4">key13B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a954f24bb359be12fb05f5e7f8c4af6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a470cb68bd2a4ab7da1e735095a1e141d"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a470cb68bd2a4ab7da1e735095a1e141d">key14A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a470cb68bd2a4ab7da1e735095a1e141d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf1832ba1ea394d812d61bfe5d6e9f6"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a4bf1832ba1ea394d812d61bfe5d6e9f6">key14B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a4bf1832ba1ea394d812d61bfe5d6e9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f9c732bc4c1843eba72d2cc840d16b"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a66f9c732bc4c1843eba72d2cc840d16b">key15A</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:a66f9c732bc4c1843eba72d2cc840d16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acacc5e64220744bb98eff9afb953f510"><td class="memItemLeft" align="right" valign="top">MFRC522::MIFARE_Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#acacc5e64220744bb98eff9afb953f510">key15B</a> = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td></tr>
+<tr class="separator:acacc5e64220744bb98eff9afb953f510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a518a52d4a838594773904f2609abbd92"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a518a52d4a838594773904f2609abbd92">userInput</a></td></tr>
+<tr class="separator:a518a52d4a838594773904f2609abbd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fc0085f3de52e1d4e1a4efce16c5eb3"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a8fc0085f3de52e1d4e1a4efce16c5eb3">sector1</a> = 1</td></tr>
+<tr class="separator:a8fc0085f3de52e1d4e1a4efce16c5eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a688a7254216a2ec52d9d072fdc1cdb0f"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a688a7254216a2ec52d9d072fdc1cdb0f">sector2</a> = 2</td></tr>
+<tr class="separator:a688a7254216a2ec52d9d072fdc1cdb0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44176a3e27cf74546df5b8821badcc14"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a44176a3e27cf74546df5b8821badcc14">sector3</a> = 3</td></tr>
+<tr class="separator:a44176a3e27cf74546df5b8821badcc14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cd9114f9e7fada30d7bbc57c05ba571"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a0cd9114f9e7fada30d7bbc57c05ba571">sector4</a> = 4</td></tr>
+<tr class="separator:a0cd9114f9e7fada30d7bbc57c05ba571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da2681af38dc67de7f27b8b461266ee"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a5da2681af38dc67de7f27b8b461266ee">sector5</a> = 5</td></tr>
+<tr class="separator:a5da2681af38dc67de7f27b8b461266ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af729e0826efc325e5fc851637b07c6ac"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#af729e0826efc325e5fc851637b07c6ac">sector6</a> = 6</td></tr>
+<tr class="separator:af729e0826efc325e5fc851637b07c6ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe47fc8c05bcd721840631a7be0271e"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#adbe47fc8c05bcd721840631a7be0271e">sector7</a> = 7</td></tr>
+<tr class="separator:adbe47fc8c05bcd721840631a7be0271e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a4f7cc3bdfb9693b4e85265f0d60bf"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a82a4f7cc3bdfb9693b4e85265f0d60bf">sector8</a> = 8</td></tr>
+<tr class="separator:a82a4f7cc3bdfb9693b4e85265f0d60bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5668dcc2d74ef7edb0dc97531928481b"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a5668dcc2d74ef7edb0dc97531928481b">sector9</a> = 9</td></tr>
+<tr class="separator:a5668dcc2d74ef7edb0dc97531928481b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6df46dd5332a62be20c33f98973ebdd"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#ae6df46dd5332a62be20c33f98973ebdd">blockAddr1</a> = 4</td></tr>
+<tr class="separator:ae6df46dd5332a62be20c33f98973ebdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b9a9391673ecdb6c83b5de2140ca87b"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a8b9a9391673ecdb6c83b5de2140ca87b">blockAddr2</a> = 8</td></tr>
+<tr class="separator:a8b9a9391673ecdb6c83b5de2140ca87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6884d7af9c268825b438daf8d4a4206"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#aa6884d7af9c268825b438daf8d4a4206">blockAddr3</a> = 12</td></tr>
+<tr class="separator:aa6884d7af9c268825b438daf8d4a4206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eaedf468758809d002115d08c13054f"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a3eaedf468758809d002115d08c13054f">blockAddr4</a> = 16</td></tr>
+<tr class="separator:a3eaedf468758809d002115d08c13054f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3676b5f9819162d085088a9b7d816b49"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a3676b5f9819162d085088a9b7d816b49">blockAddr5</a> = 20</td></tr>
+<tr class="separator:a3676b5f9819162d085088a9b7d816b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0526fff82f34f8e1df85d084c44147e"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#ad0526fff82f34f8e1df85d084c44147e">blockAddr6</a> = 24</td></tr>
+<tr class="separator:ad0526fff82f34f8e1df85d084c44147e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af84e7f7b38357176b17894468400f15d"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#af84e7f7b38357176b17894468400f15d">blockAddr7</a> = 28</td></tr>
+<tr class="separator:af84e7f7b38357176b17894468400f15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a338a786af844e33dea2f08ee157f81fc"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a338a786af844e33dea2f08ee157f81fc">blockAddr8</a> = 32</td></tr>
+<tr class="separator:a338a786af844e33dea2f08ee157f81fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac3a33667a2612e2b05f6f45db5ad491"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#aac3a33667a2612e2b05f6f45db5ad491">blockAddr9</a> = 36</td></tr>
+<tr class="separator:aac3a33667a2612e2b05f6f45db5ad491"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77058e8b04846f9969eaf064fc92b0ca"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a77058e8b04846f9969eaf064fc92b0ca">dataBlockporteNiveau1</a> []</td></tr>
+<tr class="separator:a77058e8b04846f9969eaf064fc92b0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379c1c11900f5125d12580769d47028b"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a379c1c11900f5125d12580769d47028b">dataBlockporteNiveau2</a> []</td></tr>
+<tr class="separator:a379c1c11900f5125d12580769d47028b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1196f67fad382b35cf221f7d6a56b1ce"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a1196f67fad382b35cf221f7d6a56b1ce">dataBlockporteNiveau3</a> []</td></tr>
+<tr class="separator:a1196f67fad382b35cf221f7d6a56b1ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a037e240da0922e3d913884151fa3e948"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a037e240da0922e3d913884151fa3e948">ValueBlockhotelNiveau1</a> = 2</td></tr>
+<tr class="separator:a037e240da0922e3d913884151fa3e948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada431726e0fb9b2bfe4150ea3ebbf2e0"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#ada431726e0fb9b2bfe4150ea3ebbf2e0">dataBlockhotelNiveau2</a> []</td></tr>
+<tr class="separator:ada431726e0fb9b2bfe4150ea3ebbf2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acef6bf00fb2cf2cb534e3c5ca04b2f48"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#acef6bf00fb2cf2cb534e3c5ca04b2f48">dataBlockhotelNiveau3</a> []</td></tr>
+<tr class="separator:acef6bf00fb2cf2cb534e3c5ca04b2f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc0a98ddfef5ed2f49b7c0b4e2f07055"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#adc0a98ddfef5ed2f49b7c0b4e2f07055">trailerBlock1</a> = 7</td></tr>
+<tr class="separator:adc0a98ddfef5ed2f49b7c0b4e2f07055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc6a05c26e478e8592dc42c92c69f38"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a4fc6a05c26e478e8592dc42c92c69f38">trailerBlock2</a> = 11</td></tr>
+<tr class="separator:a4fc6a05c26e478e8592dc42c92c69f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace9dd26326b760f62f181e7882172663"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#ace9dd26326b760f62f181e7882172663">trailerBlock3</a> = 15</td></tr>
+<tr class="separator:ace9dd26326b760f62f181e7882172663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2207fe05cf24c8df0b69d09385b3d07"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#ab2207fe05cf24c8df0b69d09385b3d07">trailerBlock4</a> = 19</td></tr>
+<tr class="separator:ab2207fe05cf24c8df0b69d09385b3d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d24a432648eb74c31fbc6ca12dbc887"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a1d24a432648eb74c31fbc6ca12dbc887">trailerBlock5</a> = 23</td></tr>
+<tr class="separator:a1d24a432648eb74c31fbc6ca12dbc887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afddf66d0faa45695dc4234a89d90915f"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#afddf66d0faa45695dc4234a89d90915f">trailerBlock6</a> = 27</td></tr>
+<tr class="separator:afddf66d0faa45695dc4234a89d90915f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41d70f976f7902f79d58673eae7513d0"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a41d70f976f7902f79d58673eae7513d0">trailerBlock7</a> = 31</td></tr>
+<tr class="separator:a41d70f976f7902f79d58673eae7513d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c456e0a25af6c82e4cf69a0d3093ae4"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a4c456e0a25af6c82e4cf69a0d3093ae4">trailerBlock8</a> = 35</td></tr>
+<tr class="separator:a4c456e0a25af6c82e4cf69a0d3093ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99fd940b2754b9ac05bee565b3f14606"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a99fd940b2754b9ac05bee565b3f14606">trailerBlock9</a> = 39</td></tr>
+<tr class="separator:a99fd940b2754b9ac05bee565b3f14606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c89389167a60072f5aff581964351d6"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a8c89389167a60072f5aff581964351d6">trailerBuffer</a> []</td></tr>
+<tr class="separator:a8c89389167a60072f5aff581964351d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45bd063ba607969e00128c9ba2563929"><td class="memItemLeft" align="right" valign="top">MFRC522::PICC_Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a45bd063ba607969e00128c9ba2563929">piccType</a></td></tr>
+<tr class="separator:a45bd063ba607969e00128c9ba2563929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9355218fc765112713eed7d729a8fa35"><td class="memItemLeft" align="right" valign="top">MFRC522::StatusCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a9355218fc765112713eed7d729a8fa35">status</a></td></tr>
+<tr class="separator:a9355218fc765112713eed7d729a8fa35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc32c681766921ea9cb757927be6dd3"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a0dc32c681766921ea9cb757927be6dd3">buffer</a> [18]</td></tr>
+<tr class="separator:a0dc32c681766921ea9cb757927be6dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab028424f03af9549f9665978001ffe9a"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#ab028424f03af9549f9665978001ffe9a">size</a> = sizeof(<a class="el" href="make_master_card_8ino.html#a0dc32c681766921ea9cb757927be6dd3">buffer</a>)</td></tr>
+<tr class="separator:ab028424f03af9549f9665978001ffe9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908d323e20eb19b13d09cf8fdaf7f62c"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a908d323e20eb19b13d09cf8fdaf7f62c">count</a> = 0</td></tr>
+<tr class="separator:a908d323e20eb19b13d09cf8fdaf7f62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01571c420f280137c16d319178731da5"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="make_master_card_8ino.html#a01571c420f280137c16d319178731da5">value</a></td></tr>
+<tr class="separator:a01571c420f280137c16d319178731da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des macros</h2>
+<a id="aff1f454efd80d2e23a19eb9aa4cf23ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff1f454efd80d2e23a19eb9aa4cf23ec">&#9670;&nbsp;</a></span>NEW_UID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NEW_UID&#160;&#160;&#160;{0x09, 0xCD, 0xF0, 0x5D}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36932b0e869e0114f32e255f61306d6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36932b0e869e0114f32e255f61306d6b">&#9670;&nbsp;</a></span>RST_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RST_PIN&#160;&#160;&#160;9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2><a class="anchor" id="autotoc_md0"></a>
+Ce programme est basé sur l'exemple ReadAndWrite.ino de la librairie MFRC522</h2>
+<p>This is a MFRC522 library example; see <a href="https://github.com/miguelbalboa/rfid">https://github.com/miguelbalboa/rfid</a> for further details and other examples.</p>
+<p>NOTE: The library file MFRC522.h has a lot of useful info. Please read it.</p>
+<h2><a class="anchor" id="autotoc_md1"></a>
+Released into the public domain.</h2>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Typical pin layout used:</h2>
+<p>MFRC522 Arduino Arduino Arduino Arduino Arduino Reader/PCD Uno/101 Mega Nano v3 Leonardo/Micro Pro Micro </p>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Signal      Pin          Pin           Pin       Pin        Pin              Pin</h2>
+<p>RST/Reset RST 9 5 D9 RESET/ICSP-5 RST SPI SS SDA(SS) 10 53 D10 10 10 SPI MOSI MOSI 11 / ICSP-4 51 D11 ICSP-4 16 SPI MISO MISO 12 / ICSP-1 50 D12 ICSP-1 14 SPI SCK SCK 13 / ICSP-3 52 D13 ICSP-3 15 </p>
+
+</div>
+</div>
+<a id="a86fac98c9b4c98a3e50fc45440878391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86fac98c9b4c98a3e50fc45440878391">&#9670;&nbsp;</a></span>SS_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SS_PIN&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a58bfcaf707e4863a09a15ca2a11d33e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58bfcaf707e4863a09a15ca2a11d33e5">&#9670;&nbsp;</a></span>dump_byte_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dump_byte_array </td>
+          <td>(</td>
+          <td class="paramtype">byte *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>bufferSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Helper routine to dump a byte array as hex values to Serial. </p>
+
+</div>
+</div>
+<a id="ace10e61b6f8f85bdb21140267aee533f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace10e61b6f8f85bdb21140267aee533f">&#9670;&nbsp;</a></span>formatValueBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void formatValueBlock </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>blockAddr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ensure that a given block is formatted as a Value Block. </p>
+
+</div>
+</div>
+<a id="afe461d27b9c48d5921c00d521181f12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe461d27b9c48d5921c00d521181f12f">&#9670;&nbsp;</a></span>loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Boucle principale </p>
+
+</div>
+</div>
+<a id="ac672f817299d07cc428fe3f456235273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac672f817299d07cc428fe3f456235273">&#9670;&nbsp;</a></span>mfrc522()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522 mfrc522 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="make_master_card_8ino.html#a86fac98c9b4c98a3e50fc45440878391">SS_PIN</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="make_master_card_8ino.html#a36932b0e869e0114f32e255f61306d6b">RST_PIN</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4fc01d736fe50cf5b977f755b675f11d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc01d736fe50cf5b977f755b675f11d">&#9670;&nbsp;</a></span>setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialisation </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a id="ae6df46dd5332a62be20c33f98973ebdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6df46dd5332a62be20c33f98973ebdd">&#9670;&nbsp;</a></span>blockAddr1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte blockAddr1 = 4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b9a9391673ecdb6c83b5de2140ca87b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b9a9391673ecdb6c83b5de2140ca87b">&#9670;&nbsp;</a></span>blockAddr2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte blockAddr2 = 8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6884d7af9c268825b438daf8d4a4206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6884d7af9c268825b438daf8d4a4206">&#9670;&nbsp;</a></span>blockAddr3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte blockAddr3 = 12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3eaedf468758809d002115d08c13054f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eaedf468758809d002115d08c13054f">&#9670;&nbsp;</a></span>blockAddr4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte blockAddr4 = 16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3676b5f9819162d085088a9b7d816b49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3676b5f9819162d085088a9b7d816b49">&#9670;&nbsp;</a></span>blockAddr5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte blockAddr5 = 20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0526fff82f34f8e1df85d084c44147e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0526fff82f34f8e1df85d084c44147e">&#9670;&nbsp;</a></span>blockAddr6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte blockAddr6 = 24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af84e7f7b38357176b17894468400f15d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af84e7f7b38357176b17894468400f15d">&#9670;&nbsp;</a></span>blockAddr7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte blockAddr7 = 28</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a338a786af844e33dea2f08ee157f81fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a338a786af844e33dea2f08ee157f81fc">&#9670;&nbsp;</a></span>blockAddr8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte blockAddr8 = 32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac3a33667a2612e2b05f6f45db5ad491"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac3a33667a2612e2b05f6f45db5ad491">&#9670;&nbsp;</a></span>blockAddr9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte blockAddr9 = 36</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0dc32c681766921ea9cb757927be6dd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dc32c681766921ea9cb757927be6dd3">&#9670;&nbsp;</a></span>buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte buffer[18]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a908d323e20eb19b13d09cf8fdaf7f62c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a908d323e20eb19b13d09cf8fdaf7f62c">&#9670;&nbsp;</a></span>count</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte count = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada431726e0fb9b2bfe4150ea3ebbf2e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada431726e0fb9b2bfe4150ea3ebbf2e0">&#9670;&nbsp;</a></span>dataBlockhotelNiveau2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte dataBlockhotelNiveau2[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    0x02, 0x37, 0x00, 0x00,  </div>
+<div class="line">    0x00, 0x00, 0x00, 0x00,  </div>
+<div class="line">    0x00, 0x00, 0x00, 0x00,  </div>
+<div class="line">    0x00, 0x00, 0x00, 0x00  </div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acef6bf00fb2cf2cb534e3c5ca04b2f48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acef6bf00fb2cf2cb534e3c5ca04b2f48">&#9670;&nbsp;</a></span>dataBlockhotelNiveau3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte dataBlockhotelNiveau3[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    0x16, 0x04, 0x19, 0x98,  </div>
+<div class="line">    0x00, 0x00, 0x00, 0x00,  </div>
+<div class="line">    0x00, 0x00, 0x00, 0x00,  </div>
+<div class="line">    0x00, 0x00, 0x00, 0x00  </div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a77058e8b04846f9969eaf064fc92b0ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77058e8b04846f9969eaf064fc92b0ca">&#9670;&nbsp;</a></span>dataBlockporteNiveau1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte dataBlockporteNiveau1[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    0x72, 0x65, 0x74, 0x72, </div>
+<div class="line">    0x6f, 0x50, 0x6f, 0x72, </div>
+<div class="line">    0x74, 0x65, 0x32, 0x00, </div>
+<div class="line">    0x00, 0x00, 0x00, 0x00  </div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a379c1c11900f5125d12580769d47028b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a379c1c11900f5125d12580769d47028b">&#9670;&nbsp;</a></span>dataBlockporteNiveau2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte dataBlockporteNiveau2[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    0x72, 0x65, 0x74, 0x72, </div>
+<div class="line">    0x6f, 0x50, 0x6f, 0x72, </div>
+<div class="line">    0x74, 0x65, 0x33, 0x00, </div>
+<div class="line">    0x00, 0x00, 0x00, 0x00  </div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1196f67fad382b35cf221f7d6a56b1ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1196f67fad382b35cf221f7d6a56b1ce">&#9670;&nbsp;</a></span>dataBlockporteNiveau3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte dataBlockporteNiveau3[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    0x72, 0x65, 0x74, 0x72, </div>
+<div class="line">    0x6f, 0x50, 0x6f, 0x72, </div>
+<div class="line">    0x74, 0x65, 0x34, 0x00, </div>
+<div class="line">    0x00, 0x00, 0x00, 0x00  </div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a74db86b29b9d826a8007113e1fd3d2d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74db86b29b9d826a8007113e1fd3d2d4">&#9670;&nbsp;</a></span>key</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac8b091af40e004f6687a6272d74e77d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac8b091af40e004f6687a6272d74e77d">&#9670;&nbsp;</a></span>key0A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key0A = {keyByte: {0xA0, 0xA1, 0xA2, 0xA3, 0xA4, 0xA5}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e4bc65b3199348bf250f7e42eb09eaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e4bc65b3199348bf250f7e42eb09eaa">&#9670;&nbsp;</a></span>key0B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key0B = {keyByte: {0xA0, 0xA1, 0xA2, 0xA3, 0xA4, 0xA5}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6fadb7f587462be789beea7a54872ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6fadb7f587462be789beea7a54872ab">&#9670;&nbsp;</a></span>key10A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key10A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e6838d5e9297d50af69c24b0e37d7ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e6838d5e9297d50af69c24b0e37d7ba">&#9670;&nbsp;</a></span>key10B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key10B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a332dc658c97e4387c7ee415a216faac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a332dc658c97e4387c7ee415a216faac3">&#9670;&nbsp;</a></span>key11A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key11A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a703c57caf95eb2c06dd9bb97e8a16a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a703c57caf95eb2c06dd9bb97e8a16a90">&#9670;&nbsp;</a></span>key11B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key11B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e0e547d1d72080428f97f99a96d9169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e0e547d1d72080428f97f99a96d9169">&#9670;&nbsp;</a></span>key12A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key12A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26a76d18718e571a17c02d74492961f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26a76d18718e571a17c02d74492961f4">&#9670;&nbsp;</a></span>key12B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key12B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3edeb2bbe948fa550e6a664b34921ff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3edeb2bbe948fa550e6a664b34921ff8">&#9670;&nbsp;</a></span>key13A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key13A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a954f24bb359be12fb05f5e7f8c4af6b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a954f24bb359be12fb05f5e7f8c4af6b4">&#9670;&nbsp;</a></span>key13B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key13B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a470cb68bd2a4ab7da1e735095a1e141d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a470cb68bd2a4ab7da1e735095a1e141d">&#9670;&nbsp;</a></span>key14A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key14A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4bf1832ba1ea394d812d61bfe5d6e9f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bf1832ba1ea394d812d61bfe5d6e9f6">&#9670;&nbsp;</a></span>key14B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key14B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66f9c732bc4c1843eba72d2cc840d16b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66f9c732bc4c1843eba72d2cc840d16b">&#9670;&nbsp;</a></span>key15A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key15A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acacc5e64220744bb98eff9afb953f510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acacc5e64220744bb98eff9afb953f510">&#9670;&nbsp;</a></span>key15B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key15B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2bf6ec3190486262f95aaa36a671b4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2bf6ec3190486262f95aaa36a671b4c">&#9670;&nbsp;</a></span>key1A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key1A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a22a71eb735d43fd8c7d7bb0ad69c727c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a71eb735d43fd8c7d7bb0ad69c727c">&#9670;&nbsp;</a></span>key1B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key1B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aebdc50f1f9d55f3e8d702f72685c0a16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebdc50f1f9d55f3e8d702f72685c0a16">&#9670;&nbsp;</a></span>key2A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key2A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c688c34bbe792f41f59c271b8851e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c688c34bbe792f41f59c271b8851e08">&#9670;&nbsp;</a></span>key2B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key2B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a905bd240c55679a1da088192701cce24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a905bd240c55679a1da088192701cce24">&#9670;&nbsp;</a></span>key3A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key3A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a622d82bbeba00f2780b289c725289c69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a622d82bbeba00f2780b289c725289c69">&#9670;&nbsp;</a></span>key3B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key3B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75360efd9a862bc5057c7c705290af50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75360efd9a862bc5057c7c705290af50">&#9670;&nbsp;</a></span>key4A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key4A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ba256df070aa191602a3cfe3627b218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ba256df070aa191602a3cfe3627b218">&#9670;&nbsp;</a></span>key4B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key4B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8018970abb2fd443c9ecf87e0247b4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8018970abb2fd443c9ecf87e0247b4f">&#9670;&nbsp;</a></span>key5A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key5A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ef7fe97bc61e4ce3c2541bfabfc4088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ef7fe97bc61e4ce3c2541bfabfc4088">&#9670;&nbsp;</a></span>key5B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key5B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7efc1bd2905c31634c936b3b642fd819"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7efc1bd2905c31634c936b3b642fd819">&#9670;&nbsp;</a></span>key6A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key6A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a411c891863e4b9671bd6b5f2ba7d7f84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a411c891863e4b9671bd6b5f2ba7d7f84">&#9670;&nbsp;</a></span>key6B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key6B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a817e979ddec92fed31f10bb7f55bb3a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a817e979ddec92fed31f10bb7f55bb3a2">&#9670;&nbsp;</a></span>key7A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key7A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91f98934b08faca0cb56d7a253a11d41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91f98934b08faca0cb56d7a253a11d41">&#9670;&nbsp;</a></span>key7B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key7B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade446e8a32b0406f5f65969770c13a24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade446e8a32b0406f5f65969770c13a24">&#9670;&nbsp;</a></span>key8A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key8A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f91407f31d1ba53063bee0a11c19988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f91407f31d1ba53063bee0a11c19988">&#9670;&nbsp;</a></span>key8B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key8B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab35a03c9695e575ee665e391768c642b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab35a03c9695e575ee665e391768c642b">&#9670;&nbsp;</a></span>key9A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key9A = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb926161612b8cbc4669a4e8f916cb72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb926161612b8cbc4669a4e8f916cb72">&#9670;&nbsp;</a></span>key9B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::MIFARE_Key key9B = {keyByte: {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45bd063ba607969e00128c9ba2563929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45bd063ba607969e00128c9ba2563929">&#9670;&nbsp;</a></span>piccType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::PICC_Type piccType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8fc0085f3de52e1d4e1a4efce16c5eb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fc0085f3de52e1d4e1a4efce16c5eb3">&#9670;&nbsp;</a></span>sector1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte sector1 = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a688a7254216a2ec52d9d072fdc1cdb0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a688a7254216a2ec52d9d072fdc1cdb0f">&#9670;&nbsp;</a></span>sector2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte sector2 = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44176a3e27cf74546df5b8821badcc14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44176a3e27cf74546df5b8821badcc14">&#9670;&nbsp;</a></span>sector3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte sector3 = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0cd9114f9e7fada30d7bbc57c05ba571"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cd9114f9e7fada30d7bbc57c05ba571">&#9670;&nbsp;</a></span>sector4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte sector4 = 4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5da2681af38dc67de7f27b8b461266ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5da2681af38dc67de7f27b8b461266ee">&#9670;&nbsp;</a></span>sector5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte sector5 = 5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af729e0826efc325e5fc851637b07c6ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af729e0826efc325e5fc851637b07c6ac">&#9670;&nbsp;</a></span>sector6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte sector6 = 6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adbe47fc8c05bcd721840631a7be0271e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbe47fc8c05bcd721840631a7be0271e">&#9670;&nbsp;</a></span>sector7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte sector7 = 7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82a4f7cc3bdfb9693b4e85265f0d60bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82a4f7cc3bdfb9693b4e85265f0d60bf">&#9670;&nbsp;</a></span>sector8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte sector8 = 8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5668dcc2d74ef7edb0dc97531928481b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5668dcc2d74ef7edb0dc97531928481b">&#9670;&nbsp;</a></span>sector9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte sector9 = 9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab028424f03af9549f9665978001ffe9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab028424f03af9549f9665978001ffe9a">&#9670;&nbsp;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte size = sizeof(<a class="el" href="make_master_card_8ino.html#a0dc32c681766921ea9cb757927be6dd3">buffer</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9355218fc765112713eed7d729a8fa35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9355218fc765112713eed7d729a8fa35">&#9670;&nbsp;</a></span>status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522::StatusCode status</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc0a98ddfef5ed2f49b7c0b4e2f07055"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc0a98ddfef5ed2f49b7c0b4e2f07055">&#9670;&nbsp;</a></span>trailerBlock1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte trailerBlock1 = 7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4fc6a05c26e478e8592dc42c92c69f38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc6a05c26e478e8592dc42c92c69f38">&#9670;&nbsp;</a></span>trailerBlock2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte trailerBlock2 = 11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace9dd26326b760f62f181e7882172663"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace9dd26326b760f62f181e7882172663">&#9670;&nbsp;</a></span>trailerBlock3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte trailerBlock3 = 15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab2207fe05cf24c8df0b69d09385b3d07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2207fe05cf24c8df0b69d09385b3d07">&#9670;&nbsp;</a></span>trailerBlock4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte trailerBlock4 = 19</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d24a432648eb74c31fbc6ca12dbc887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d24a432648eb74c31fbc6ca12dbc887">&#9670;&nbsp;</a></span>trailerBlock5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte trailerBlock5 = 23</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afddf66d0faa45695dc4234a89d90915f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afddf66d0faa45695dc4234a89d90915f">&#9670;&nbsp;</a></span>trailerBlock6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte trailerBlock6 = 27</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41d70f976f7902f79d58673eae7513d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41d70f976f7902f79d58673eae7513d0">&#9670;&nbsp;</a></span>trailerBlock7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte trailerBlock7 = 31</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c456e0a25af6c82e4cf69a0d3093ae4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c456e0a25af6c82e4cf69a0d3093ae4">&#9670;&nbsp;</a></span>trailerBlock8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte trailerBlock8 = 35</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99fd940b2754b9ac05bee565b3f14606"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99fd940b2754b9ac05bee565b3f14606">&#9670;&nbsp;</a></span>trailerBlock9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte trailerBlock9 = 39</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c89389167a60072f5aff581964351d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c89389167a60072f5aff581964351d6">&#9670;&nbsp;</a></span>trailerBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte trailerBuffer[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    255, 255, 255, 255, 255, 255,       </div>
+<div class="line">    0, 0, 0,</div>
+<div class="line">    0,</div>
+<div class="line">    255, 255, 255, 255, 255, 255}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a518a52d4a838594773904f2609abbd92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a518a52d4a838594773904f2609abbd92">&#9670;&nbsp;</a></span>userInput</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char userInput</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01571c420f280137c16d319178731da5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01571c420f280137c16d319178731da5">&#9670;&nbsp;</a></span>value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a037e240da0922e3d913884151fa3e948"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a037e240da0922e3d913884151fa3e948">&#9670;&nbsp;</a></span>ValueBlockhotelNiveau1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte ValueBlockhotelNiveau1 = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>
