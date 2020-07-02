@@ -6,7 +6,7 @@ Recquiert une carte Arduino et un lecteur MFRC522.
 Cloner le dossier build dans le dossier MifareGame du GitHub secyourdev. 
 Lancer l’exécutable main.exe sur Windows ou main sur Linux.
 
-## Installation
+## Configuration
 Pour brancher le lecteur MFRC 522, il faut faire correspondre les pin selon la disposition suivante :
 
 |     Signal    | Lecteur MFRC522 |  Arduino Uno  |
