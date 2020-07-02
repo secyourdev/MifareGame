@@ -10,13 +10,13 @@ Lancer l’exécutable main.exe sur Windows ou main sur Linux.
 Pour brancher le lecteur MFRC 522, il faut faire correspondre les pin selon la disposition suivante :
 
 |     Signal    | Lecteur MFRC522 |  Arduino Uno  |
-| ------------- | -------------   | ------------- |
+| :-----------: | :-----------:   | :-----------: |
 | Alimentation  |      +3.3V      |      +3.3V    |
 |      GND      |       GND       |       GND     |
 |   RST/Reset   |       RST       |        9      |
-|     SPI SS    |     SDA(SS)     |       10      |
-|    SPI MOSI   |        MOSI     |       11      |
-|    SPI MISO   |        MISO     |       12      |
+|     SPI SS    |     SDA (SS)    |       10      |
+|    SPI MOSI   |       MOSI      |       11      |
+|    SPI MISO   |       MISO      |       12      |
 |    SPI SCK    |       SCK       |       13      |
 
 Pensez également à téléverser le programme arduinoMain sur la carte Arduino, disponible dans le dossier MifareGame/arduino/arduinoMain/.
