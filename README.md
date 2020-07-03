@@ -3,7 +3,7 @@ Jeu regroupant plusieurs challenges exploitant les vulnérabilités de certaines
 Recquiert une carte Arduino et un lecteur MFRC522.
 
 ## Installation
-Cloner le dossier build dans le dossier MifareGame du GitHub secyourdev. 
+Cloner le dossier build dans le dossier MifareGame du GitHub secyourdev.
 Lancer l’exécutable main.exe sur Windows ou main sur Linux.
 
 ## Configuration
@@ -25,5 +25,8 @@ Pensez également à téléverser le programme arduinoMain sur la carte Arduino,
 Pour exécuter directement le projet, il faut installer la librairie Arduino rfid (actuellement en 1.4.6), développée par miguelbalboa.
 Le programme Python nécessite d'installer pygame avec :
 ```
-pip install pygame 
+pip install pygame
 ```
+
+##Erreurs
+Si la carte Arduino ne semble plus répondre, vous pouvez la réinistialiser en appuyant brièvement sur le bouton RESET.
