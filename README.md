@@ -28,5 +28,15 @@ Le programme Python nécessite d'installer pygame avec :
 pip install pygame
 ```
 
+Si vous voulez créer un nouvel exécutable, en fonction de la version de python utilisée :
+```
+python setup.py build
+```
+
+ou
+```
+python3 setup.py build
+```
+
 ##Erreurs
 Si la carte Arduino ne semble plus répondre, vous pouvez la réinistialiser en appuyant brièvement sur le bouton RESET.
